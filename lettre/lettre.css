@@ -1,0 +1,40 @@
+
+body{
+	background-color: rgba(25,150,20,0.7);
+}
+.so{
+	position: center;
+	background-color: rgba(0,68,255,0.5);
+	margin: 80px 180px;
+	
+}
+.fo{
+	text-align: justify;
+}
+h3{
+	text-align: center;
+}
+.sig{
+	background-position: right;
+}
+a{
+	color: #ffffff;
+	text-decoration: none;
+}
+.mo{
+	padding: 5px;
+	border: 2px solid blue;
+	box-shadow: 5px 4px black;
+
+}
+.add{
+
+	direction: rtl;
+}
+a:hover{
+	color: red;
+}
+.img{
+	text-align: right;
+
+}
