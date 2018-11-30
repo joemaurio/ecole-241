@@ -1,67 +1,62 @@
 
-*{
-	margin: 0;
-	padding: 0;
-}
-body{
-	background-color: #333;
-}
-.touslebloc{
-	position: relative;
-	background-color: rgb(255,255,255);
-	width: 800px;/*pour centrer j'utilise la largeur de mon bloc*/
-	margin: 35px auto;
-	display: block;
-border-radius: 14px;
-box-shadow: 2px 7px 12px 14px red;
+*{margin: 0;padding: 0;}
 
+body{background-color: #333;}
+
+body:hover{background-color: #fff;}
+
+a:hover{color: red;}
+
+a:hover{color: red;}
+
+div:hover{background-color:  #ffffff;color: #000;transform: scale(1.05);box-shadow: 14px 14px 14px 14px yellow;/*transition*/}
+
+.posi-relative{position: relative;}
+
+.widt-800{width: 800px;}/*pour centrer j'utilise la largeur de mon bloc*/
+
+.marg-0{margin:0px;}
+
+.marg-x-50{margin:50px auto;}
+
+.pad-42{padding: 42px;}
+
+.disp-block{display: block;}
+
+.transi-tran-8{transition: transform .8s;}
+
+.dir-rtl{direction: rtl;}
+
+.border-rad-14{border-radius: 14px;} 
+.border-2{border-style: solid;border-width: 2px;}
+.border-blue{border-color: blue;}
+
+
+.bx-sha-12{box-shadow: 12px 12px 12px 12px;}
+
+.txt-1{font-size: 1em;}
+.txt-justify{text-align: justify;}
+.txt-right{text-align: right;}
+.txt-center{text-align: center;}	
+.txt-deco-no{text-decoration: none;}
+
+.tex-Cormorant-Upright{font-family: 'Cormorant-Upright', serif;}
+.txt-Gloria-Hallelujah{	font-family: 'Gloria Hallelujah', cursive;}
+
+
+
+.bg-color{background-color: rgb(255,255,255)}
+.color-black{color: #000;} 
 
 	
-}
-.lettre{
-	text-align: justify;
-}
-h3{
-	font-family: 'Gloria Hallelujah', cursive;
-	text-align: center;
-}
-
-a{
-	color: #000;
-	text-decoration: none;
-}
-.contenu{
-	font-family: 'Cormorant Upright', serif;
-	padding: 42px;
-	border: 2px solid blue;
-	
-transition: transform .8s;
-border-radius: 14px;
-}
-.address{
-
-	direction: rtl;
-}
-a:hover{
-	color: red;
-}
-.img{ 
-	text-align: right;
-
 	
 
-}
-.touslebloc:hover{
-	background-color:  #ffffff;
-	color: #000;
-	transform: scale(1.05);
-	box-shadow: 2px 7px 12px 14px yellow;
-	/*transition*/
-}
-body:hover{
-	background-color: #fff;
-}
-address{
-	font-family: 'Cormorant Upright', serif;
-	font-size: 1em;
-}
+
+ 
+
+
+
+
+
+
+
