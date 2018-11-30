@@ -1,40 +1,67 @@
 
-body{
-	background-color: rgba(25,150,20,0.7);
+*{
+	margin: 0;
+	padding: 0;
 }
-.so{
-	position: center;
-	background-color: rgba(0,68,255,0.5);
-	margin: 80px 180px;
+body{
+	background-color: #333;
+}
+.touslebloc{
+	position: relative;
+	background-color: rgb(255,255,255);
+	width: 800px;/*pour centrer j'utilise la largeur de mon bloc*/
+	margin: 35px auto;
+	display: block;
+border-radius: 14px;
+box-shadow: 2px 7px 12px 14px red;
+
+
 	
 }
-.fo{
+.lettre{
 	text-align: justify;
 }
 h3{
+	font-family: 'Gloria Hallelujah', cursive;
 	text-align: center;
 }
-.sig{
-	background-position: right;
-}
+
 a{
-	color: #ffffff;
+	color: #000;
 	text-decoration: none;
 }
-.mo{
-	padding: 5px;
+.contenu{
+	font-family: 'Cormorant Upright', serif;
+	padding: 42px;
 	border: 2px solid blue;
-	box-shadow: 5px 4px black;
-
+	
+transition: transform .8s;
+border-radius: 14px;
 }
-.add{
+.address{
 
 	direction: rtl;
 }
 a:hover{
 	color: red;
 }
-.img{
+.img{ 
 	text-align: right;
 
+	
+
+}
+.touslebloc:hover{
+	background-color:  #ffffff;
+	color: #000;
+	transform: scale(1.05);
+	box-shadow: 2px 7px 12px 14px yellow;
+	/*transition*/
+}
+body:hover{
+	background-color: #fff;
+}
+address{
+	font-family: 'Cormorant Upright', serif;
+	font-size: 1em;
 }
