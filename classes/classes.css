@@ -1,11 +1,38 @@
+/*couleur de texte*/
 .color-red{color: red;}
 .color-green{color: green;}
+.color-black{color: black;}
+.color-white{color: white;}
+.color-silver{color: silver;}
+.color-gray{color: gray;}
+.color-maroon{color: maroon;}
+.color-lime{color: lime;}
+.color-olive{color: olive;}
+.color-blue{color: blue;}
+.color-navy{color: navy;}
+.color-fuchsia{color: fuchsia;}
+.color-purple{color: purple;}
+.color-aqua{color: aqua;}
+.color-teal{color: teal;}
 .color-yellow{color:yellow;}
 
 /*backgroung*/
-.bg-bleu{background-color: rgba(0,0,255,1);}
-.bg-green{background-color: green;}
-.bg-red{background-color: red;}
+.bg-red{color: red;}
+.bg-green{color: green;}
+.bg-black{color: black;}
+.bg-white{color: white;}
+.bg-silver{color: silver;}
+.bg-gray{color: gray;}
+.bg-maroon{color: maroon;}
+.bg-lime{color: lime;}
+.bg-olive{color: olive;}
+.bg-blue{color: blue;}
+.bg-navy{color: navy;}
+.bg-fuchsia{color: fuchsia;}
+.bg-purple{color: purple;}
+.bg-aqua{color: aqua;}
+.bg-teal{color: teal;}
+.bg-yellow{color:yellow;}
 
 
 
@@ -14,9 +41,13 @@
 .txt-arial{font-family: Arial;}
 
 /*taille de la police*/
-.text-4{font-size: 4em;}
 .text-1{font-size: 1em;}
+.text-2{font-size: 2em;}
 .text-3{font-size: 3em;}
+.text-4{font-size: 4em;}
+.text-5{font-size: 5em;}
+.text-6{font-size: 6em;}
+.text-7{font-size: 7em;}
 
 
 .txt-deco{text-decoration: none;}
@@ -35,6 +66,16 @@
 .border-8{border-style: solid;border-width: 8px;}
 .border-9{border-style: solid;border-width: 9px;}
 .border-10{border-style: solid;border-width: 10px;}
+.border-11{border-style: double;border-width: 11px;}
+.border-12{border-style: double;border-width: 12px;}
+.border-13{border-style: double;border-width: 13px;}
+.border-14{border-style: double;border-width: 14px;}
+.border-15{border-style: double;border-width: 15px;}
+.border-16{border-style: dotted;border-width: 16px;}
+.border-17{border-style: dotted;border-width: 17px;}
+.border-18{border-style: dotted;border-width: 18px;}
+.border-19{border-style: dotted;border-width: 19px;}
+.border-20{border-style: dotted;border-width: 20px;}
 
 /*couleur de la bordure*/
 .border-yellow{border-color: yellow;}
@@ -43,8 +84,8 @@
 
 /*padding complete*/
 .pad-0{padding: 0;}
-.pad-1{padding: 1px; }
-.pad-2{padding:2px;}
+.pad-1{padding: 1px;}
+.pad-2{padding: 2px;}
 .pad-3{padding: 3px;}
 .pad-4{padding: 4px;}
 .pad-5{padding: 5px;}
