@@ -1,15 +1,15 @@
 body{padding: 0;margin: 0;}
-header>nav>ul>li:hover{background-color: #707070;}
+header>nav>div>ul>li:hover{background-color: #707070;}
 nav>ul>li:hover{background-color: #08b597;}
 div>div>p>a:hover{background-color: white;color:#08b597; }
-div.disp-flex>a:hover{box-shadow: 4px 4px 4px 4px black; }
+.nopuce{list-style-type: none;}
 .barreh{
-	list-style-type: none;
+	
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color:#08b597;
-    top: 0;
+    top:
     width: 100%;       
 }
 .barreh2{
@@ -24,7 +24,7 @@ div.disp-flex>a:hover{box-shadow: 4px 4px 4px 4px black; }
        
 }
 .color-white{color: white;}
-
+header>nav>ul>li>i{margin-left: 15px;float: right;margin-right: 0;text-align: center;padding-top:13px; }
 li {float: left;}
 
 a{text-decoration: none;}
@@ -50,11 +50,13 @@ a{text-decoration: none;}
 .pad-l-0{padding-left: 0;}
 .pad-r-20{padding-right: 20px;}
 .pad-t-15{padding-top: 15px;}
+.pad-t-25{padding-top: 25px;}
 .pad-b-15{padding-bottom: 15px;}
+.pad-b-0{padding-bottom: 0;}
 .background{background-image: url("../img/imagea.jpg");background-repeat: no-repeat;background-size: 100%;}
 .background2{background-image: url("../img/vignette.png");background-repeat: no-repeat;background-size: 100%;}
 .widt-heig{width: 250px;height: 150px;}
-.widt-heig-50{width: 250px;height: 100px;}
+.widt-heig-50{width: 230px;height: 190px;}
 .bg-green{background-color: #08b597;}
 .float-l{float: left;}
 .color-08b597{color: #08b597;}
