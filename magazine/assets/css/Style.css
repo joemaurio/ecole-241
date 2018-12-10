@@ -29,6 +29,7 @@ li {float: left;}
 
 a{text-decoration: none;}
 .txt-center{text-align: center;}
+.txt-right{text-align:right;}
 .disp-block{display: block;}
 .pad-13{padding: 13px;}
 .pad-10{padding: 10px;}
@@ -37,9 +38,11 @@ a{text-decoration: none;}
 .pad-4{padding: 4px;}
 .marg-20{margin: 20px;}
 .pad-60{padding: 60px;}
+.pad-0{padding: 0;}
 .pad-100{padding: 100px;}
 .pad-200{padding: 200px;}
 
+.marg-l-0{margin-left: 0;}
 .marg-l-20{margin-left: 20px;}
 .marg-l-90{margin-left: 90px;}
 .marg-b-90{margin-bottom: 90px;}
@@ -55,10 +58,14 @@ a{text-decoration: none;}
 .pad-b-0{padding-bottom: 0;}
 .background{background-image: url("../img/imagea.jpg");background-repeat: no-repeat;background-size: 100%;}
 .background2{background-image: url("../img/vignette.png");background-repeat: no-repeat;background-size: 100%;}
+.background3{background-image: url("../img/Capturea.png");background-repeat: no-repeat;background-size: 100%;}
+.background4{background-image: url("../img/Captureb.png");background-repeat: no-repeat;background-size: 100%;}
+.background5{background-image: url("../img/Capturec.png");background-repeat: no-repeat;background-size: 100%;}
 .widt-heig{width: 250px;height: 150px;}
 .widt-heig-50{width: 230px;height: 190px;}
 .bg-green{background-color: #08b597;}
 .float-l{float: left;}
+.float-r{float:right;}
 .color-08b597{color: #08b597;}
 .bg-08b597{background-color:#08b597;}
 .color-707070{color: #707070;}
@@ -79,6 +86,19 @@ a{text-decoration: none;}
 .txt-7{font-size: 7em;}
 hr{opacity: 0.5;margin-left: 8%;margin-right: 18%;}
 @font-face{font-family: MotionPicture;src:url("../fonts/MotionPicture_PersonalUseOnly.ttf") format('truetype'); }
-.disp-flex{display: flex;  flex-flow: row wrap; justify-content: center;}
+.disp-flex{display: flex;}
 .bg-red{background-color: red;}
 .posi-relative{position: relative;}
+.justify-content{justify-content:space-around;}
+.justify-center{justify-content:center;}
+.align-items{align-items:flex-start;}
+.flex-wrap{flex-wrap: wrap;}
+
+.children:nth-of-type(1) { flex-grow: 1;}
+.children:nth-of-type(2) { flex-grow: 1;}
+.children:nth-of-type(3) { flex-grow: 3;}
+.children:nth-of-type(4) { flex-grow: 1;}
+.children:nth-of-type(5) { flex-grow: 1;}
+.children:nth-of-type(3) { flex-basis : 20% ; }
+.children:nth-of-type(2) {align-self: flex-end;}
+.children:nth-of-type(3) {align-self: center;}
