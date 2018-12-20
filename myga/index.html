@@ -1,9 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<title>My.Ga</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-
+	<header class="posi-relative">
+		<div class="dis-inblck">
+			<a href="#"><img src="assets/img/logo.png" alt="Cette image est un logo"></a>
+		</div>
+		<nav class="dis-inblck">
+			<ul id="menu">
+				<li><a href="#">My_GA</a>
+		<!--		<ul>
+						<li><a href="#">Accueil</a></li>
+						<li><a href="#">WHOIS</a></li>
+					</ul> -->
+				</li>
+				<li><a href="#">Société</a>
+		<!--		<ul>
+						<li><a href="#">A propos de My GA</a></li>
+						<li><a href="#">Politiques</a></li>
+						<li><a href="#">Bureaux d'Enregistrement</a></li>
+					</ul> -->
+				</li>
+				<li><a href="#">Assistance</a>
+		<!--			<ul>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Contactez-Nous</a></li>
+						<li><a href="#">API</a></li>
+					</ul>-->
+				</li>
+			</ul>
+		</nav>
+		<div class="dis-inblck pad-5">
+			<a href="#"><span class=" bg-blue">Login</span></a>
+		</div>
+		<select >
+			<option value="Français" selected>Français</option>
+			<option>Anglais</option>
+			<option>Espagnol</option>
+		</select>
+	</header>
+	<section class="">
+		<div class="width-30 bg-img1 pad-90">
+			<p>Visitez le Gabon<br>Inscrivez vous sur <a href="#">VisitGabon.com</a></p>
+			<form method="post" action="#">
+				<label for="Pseudo" class="dis-blck">Pseudo</label>
+				<input class="dis-blck" type="text" name="nom" id="Pseudo" placeholder="Pseudo">
+				<label for="email"></label>
+				<input class="dis-blck" type="email" name="mail" id="email" placeholder="Votre Address mail" required>
+				<input class="dis-blck" type="submit" value="Envoyer">
+			</form>
+			
+		</div>
+		<div class="bg-img2 pad-90 ">
+			<fieldset>
+				<legend>Enregistez votre nom de domaine</legend> 
+					<form method="post" action="#">
+						<input type="text" name="nom"  placeholder="Votre nom de domaine" required>
+						<label class="ga">.ga</label>
+						<input class="dis-blck marg-t-2" type="submit" value="Go c'est Go">
+					</form>	
+			</fieldset>
+		</div>
+	</section>	
+	<footer class="bg-X pad-90">
+		<div class="bg-green pad-75">
+			
+		</div>
+		<div class="bg-yellow pad-75">
+			
+		</div>
+		<div class="bg-blue pad-75">
+			
+		</div>
+	</footer>
 </body>
 </html>

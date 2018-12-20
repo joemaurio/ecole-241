@@ -1,0 +1,29 @@
+body{margin: 0;padding: 0;color:#ffffff;}
+header{background-color: rgba(255,255,254,0.5);}
+ul li{display: inline-block;}
+.dis-inblck{display: inline-block;}
+.dis-blck{display: block;}
+.bg-img1{background-image: url("../img/libreville.jpg");background-repeat: no-repeat;}
+.bg-img2{background-image: url("../img/Gabon.gif");background-repeat: no-repeat;height: 100%;}
+.pad-40{padding: 40px;}
+.pad-5{padding: 5px;}
+.posi-relative{position: relative;}
+select{position: sticky;float: right;border-bottom: 0;}
+a{text-decoration: none;}
+section{display: flex;flex-direction: row;}
+.marg-t-2{margin-top: 2px;}
+.width-30{width: 30%;}
+.width-15{width: 150px;}
+.pad-90{padding: 90px;}
+.pad-25{padding: 25px;}
+.pad-75{padding: 75px;}
+.bg-X{background-color:rgba(14,13,60,0.7);}
+li {padding: 5px;background-color: blue;}
+header div:nth-child(3){position: absolute;right: 0;bottom: 0;}
+nav{position: absolute;left: 300px;bottom: 25px;top: 25px;}
+.bg-blue{background-color: blue;}
+.bg-yellow{background-color: yellow;}
+.bg-green{background-color: green;}
+.bg-red{background-color: red;}
+footer{display: flex;flex-direction: row;justify-content: space-around;}
+.ga{color:green;font-size: 40px;font-weight: bold;}
