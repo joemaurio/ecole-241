@@ -1,14 +1,15 @@
 body{margin: 0;padding: 0;color:#ffffff;font-family: 'Rokkitt', serif;font-size: 1em;background-image: url("../img/ciel.gif");background-repeat: no-repeat;background-size: 100%;}
-header{background-color: ;height: 100px;}
-nav>ul li{display: inline-block;padding: 5px;}
-select{position:absolute;right: 0; bottom: 0;border-style: none;}
+header>div{height: 100px;display: block;position: relative;}
+header{height: 100px;}
+/*nav>ul li{display: inline-block;padding: 5px;}*/
+select{position:absolute;right: 0; bottom: 0;border-style: none;display:}
 a{text-decoration: none;color:#fff;}
 section{display: flex;flex-direction: row;justify-content: center;}
 /*nav ul {background-color: green;}*/
-header div:nth-child(4){position: absolute;right: 0;bottom: 5px;}
-nav{position: absolute;left: 300px;bottom: 25px;top: 15px;padding-left: 0;}
+div.connect{position: absolute;right: 0;bottom: 5px;display: inline-block;}
+/*nav{position: absolute;left: 300px;bottom: 25px;top: 15px;padding-left: 0;}*/
 /*.dis-inblck{display: inline-block;}*/
-div,nav{display: inline-block;}
+/*div{display: inline-block;}*/
 footer>div{display: flex;flex-direction: column;justify-content: center;}
 footer>div>ul{display: flex;flex-direction: row;}
 iframe{position: absolute;right: 0;height: 100%;bottom: 0;}
@@ -22,9 +23,10 @@ section>div form{padding: 25px;background-color: rgba(2,0,255,0.2);}
 [type="submit"]{background-color: green;}
 [required]{border-color: blue;}
 @font-face{font-family: spartan-bold;src:url("../fonts/spartan-bold.ttf") format('truetype');}
-nav li:hover{background-color: rgba(1,9,244,0.4);}
+/*nav li:hover{background-color: rgba(1,9,244,0.4);}*/
 div.connect form p>a:hover{color:red;}
-
+img{display: inline-block;}
+div>p{color:#fff;padding: 2px;background-color:rgba(10,24,250,0.7); }
 
 .masque{position: absolute;bottom: 0;right: 555px;}
 .logo{position: absolute;left:0;top: 0;height: 100px;}
@@ -61,12 +63,17 @@ div.connect form p>a:hover{color:red;}
 .bg-img12{background-image: url("../img/route1.jpeg");background-repeat: no-repeat;background-size: 100%;}
 .bg-img13{background-image: url("../img/route2.jpeg");background-repeat: no-repeat;background-size: 100%;}
 .bg-img14{background-image: url("../img/ciel.gif");background-repeat: no-repeat;background-size: 100%;}
+.bg-img15{background-image: url("../img/topelement.jpg");background-repeat: no-repeat;background-size: 100%;}
 
 .pad-40{padding: 40px;}
 .pad-5{padding: 5px;}
 .pad-0{padding: 0;}
 .pad-90{padding: 90px;}
+.pad-100{padding: 100px;}
+.pad-150{padding: 150px;}
 .pad-t-250{padding-top: 250px;}
+.pad-r-0{padding-right: 0;}
+.pad-b-0{padding-bottom: 0;}
 .pad-l-0{padding-left: 0;}
 .pad-25{padding: 25px;}
 .pad-75{padding: 75px;}

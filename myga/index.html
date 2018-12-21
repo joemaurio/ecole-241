@@ -10,58 +10,31 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<header class="posi-relative bg-Y">
-		<div class="">
-			<a href="#"><img class="logo" src="assets/img/logo.png" alt="Cette image est un logo"></a>
+	<header class="bg-Y">
+		<div class="marg-y-auto">
+			<img class="logo" src="assets/img/Logo.png" alt="Cette image est un logo"></a>
+			<div class="connect">
+				<form class="marg-r-0 pad-0" method="post" action="#">
+					<input class="width-15" type="text" name="pseudo" placeholder="Votre identifiant" required>
+					<input class="width-15" type="password" name="pwd" placeholder="************" required>
+					<input class="width-15" type="submit" value="Connection">
+					<p><a href="#">Mot de passe oublié?</a></p>
+				</form>
+			</div>
+			<select>
+				<option value="Français" selected>Français</option>
+				<option>Anglais</option>
+				<option>Espagnol</option>
+			</select>
 		</div>
-		<nav class="">
-			<ul class="txt-Bai-Jamjuree font-bold pad-l-0" id="menu">
-				<li class="color-green"><a class="color-green" href="#">My_GA</a>
-		<!--		<ul>
-						<li><a href="#">Accueil</a></li>
-						<li><a href="#">WHOIS</a></li>
-					</ul> -->
-				</li>
-				<li class=""><a href="#">Société</a>
-		<!--		<ul>
-						<li><a href="#">A propos de My GA</a></li>
-						<li><a href="#">Politiques</a></li>
-						<li><a href="#">Bureaux d'Enregistrement</a></li>
-					</ul> -->
-				</li>
-				<li class=""><a href="#">Assistance</a>
-		<!--		<ul>
-						<li><a href="#">FAQ</a></li>
-						<li><a href="#">Contactez-Nous</a></li>
-						<li><a href="#">API</a></li>
-					</ul>-->
-				</li>
-			</ul>
-		</nav>
-		<div>
-			<img class="masque" src="assets/img/masque.jpeg" alt="une image" height="100" width="120">
-		</div>
-		<div class="connect">
-			<form class="marg-r-0 pad-0" method="post" action="#">
-				<input class="width-15" type="text" name="pseudo" placeholder="Votre identifiant" required>
-				<input class="width-15" type="password" name="pwd" placeholder="************" required>
-				<input class="width-15" type="submit" value="Connection">
-				<p><a href="#">Mot de passe oublié?</a></p>
-			</form>
-		</div>
-		<select>
-			<option value="Français" selected>Français</option>
-			<option>Anglais</option>
-			<option>Espagnol</option>
-		</select>
 	</header>
 	<section class="marg-y-auto">
-		<div class="pad-90 children marg-y-auto color-green">
-			<p>Enregistez votre nom de domaine <span class="txt-spartan-bold color-green">.ga</span> GRATUIT</p> 
+		<div class="pad-100 marg-y-auto color-green bg-img15 bg-yellow">
+			<p>Enregistez votre nom de domaine <span class="txt-spartan-bold color-green">.ga</span> <span class="">GRATUIT</span></p> 
 			<form method="post" action="#">
 				<input class="width-15" placeholder="domaine.ga" type="text" name="nom"  minlength="6" maxlength="12" required>
 				<label class="txt-spartan-bold txt-40 color-green">.ga</label>
-				<input class="dis-blck marg-t-2 bouton" type="submit" value="Go c'est Go">
+				<input class="dis-blck marg-t-2 bouton pad-l-0" type="submit" value="Go c'est Go">
 			</form>		
 		</div>
 	</section>	
