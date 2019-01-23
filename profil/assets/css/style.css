@@ -12,7 +12,7 @@ a:hover{text-decoration:none;}
 main>section:first-child:hover{background-color: pink;}
 p:hover{background-color: #666;color:#fff;box-shadow: 1em 1em 1em #000;border-radius: 0.5em;}
 main>section:nth-child(2):hover{background-color: pink;}
-footer:hover{background-color: pink;}
+/*footer:hover{background-color: pink;}*/
 header:hover{background-color: pink;}
 /*header{background-image: url("../img/new.jpeg");}*/
 

@@ -12,14 +12,37 @@ a:hover{text-decoration:none;}
 main>section:first-child:hover{background-color: pink;}
 p:hover{background-color: #666;color:#fff;box-shadow: 1em 1em 1em #000;border-radius: 0.5em;}
 main>section:nth-child(2):hover{background-color: pink;}
-footer:hover{background-color: pink;}
+/*footer:hover{background-color: pink;}*/
 header:hover{background-color: pink;}
 h1{font-family: arial;font-weight: 4em;}
+.child{flex-basis: %}
+.lumiere{display: grid;grid-template-columns: 1fr 1fr;grid-template-areas: "un un" "deux trois" "quatre cinq"}
+.un{grid-area: un;margin: 1em;border:1px solid #000;padding: 0.5em;border-radius: 1em;}
+.deux{grid-area: deux;margin: 1em;border:1px solid #000;padding: 0.5em;border-radius: 1em;}
+.trois{grid-area: trois;margin: 1em;border:1px solid #000;padding: 0.5em;border-radius: 1em;}
+.quatre{grid-area: quatre;margin: 1em;border:1px solid #000;background-color: #666;padding: 0.5em;border-radius: 1em;}
+.quatre:hover{background-color: blue}
+.cinq{grid-area: cinq;margin: 1em;}
+.mar-2{margin: 2em;}
+.mar-7{margin: 7em;}
+.mar-4{margin: 4em;}
+.pad-2{padding: 2em;}
+.pad-4{padding: 4em;}
+.pad-7{padding: 7em;}
+.pad-12{padding: 12em;}
+.header-contact{height: 125vh;}
 /*header{background-image: url("../img/new.jpeg");}*/
-
+textarea,input{display: inline-block;}
+.div-moi{display: flex;flex-direction: row;justify-content: center;}
+.div-moi1{display: flex;flex-direction: column;}
+.div-moi2{width: 100%;}
+.div-moi3{background-color: ;display: grid;grid-template-columns: 1fr 1fr;align-items: center; }
+div.div-moi3>div{width: 40%;padding: 2.5em;margin: 1em;background-image: url("../img/dev.jpg");}
+.moi-a{margin: 1em;width: 80%;height: 8em;}
+a.moi-a:hover{background-color: #666;}
 
 /*header*/
-header{background-color: #;max-height: 1000em;display: flex;flex-direction: column;align-items: stretch;height: 80vh;box-shadow: 1em 1em 1em #000;}
+header{background-color: #;max-height: 5000vh;display: flex;flex-direction: column;align-items: stretch;height: 80vh;box-shadow: 1em 1em 1em #000;}
 header>div:first-child{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;padding: 0;}
 header>div:first-child>div:first-child{background-color: #666; display: flex;flex-direction: row;flex-wrap: wrap;align-content: space-around;justify-content: space-around;margin: 0.7em;border-radius: 0.5em;}
 header>div:first-child>div:first-child input{width: 70%;height: 7vh;border-radius: 0.5em;}
