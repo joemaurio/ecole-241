@@ -9,11 +9,11 @@ img{opacity: 0.8;border-radius: 12em;margin: 4px;}
 @font-face{font-family: 'spartan-bold';src:url("../fonts/spartan-bold.ttf") format('truetype');}
 div{border-radius: 2em;}
 a:hover{text-decoration:none;}
-main>section:first-child:hover{background-color: pink;}
+main>section:first-child:hover{}
 p:hover{background-color: #666;color:#fff;box-shadow: 1em 1em 1em #000;border-radius: 0.5em;}
-main>section:nth-child(2):hover{background-color: pink;}
+main>section:nth-child(2):hover{}
 /*footer:hover{background-color: pink;}*/
-header:hover{background-color: pink;}
+header:hover{}
 h1{font-family: arial;font-weight: 4em;}
 .child{flex-basis: %}
 .lumiere{display: grid;grid-template-columns: 1fr 1fr;grid-template-areas: "un un" "deux trois" "quatre cinq"}
@@ -31,6 +31,8 @@ h1{font-family: arial;font-weight: 4em;}
 .pad-7{padding: 7em;}
 .pad-12{padding: 12em;}
 .header-contact{height: 125vh;}
+.img-moi{z-index: -10000;opacity: 0.9;}
+.img-moi:hover{box-shadow:  1em 1em 1em #000;z-index: 1;}
 /*header{background-image: url("../img/new.jpeg");}*/
 textarea,input{display: inline-block;}
 .div-moi{display: flex;flex-direction: row;justify-content: center;}
@@ -42,16 +44,16 @@ div.div-moi3>div{width: 40%;padding: 2.5em;margin: 1em;background-image: url("..
 a.moi-a:hover{background-color: #666;}
 
 /*header*/
-header{background-color: #;max-height: 5000vh;display: flex;flex-direction: column;align-items: stretch;height: 80vh;box-shadow: 1em 1em 1em #000;}
+header{background-color:rgba(0,0,0,0.5);max-height: 500em;display: flex;flex-direction: column;align-items: stretch;height: 80vh;box-shadow: 1em 1em 1em #000;}
 header>div:first-child{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;padding: 0;}
 header>div:first-child>div:first-child{background-color: #666; display: flex;flex-direction: row;flex-wrap: wrap;align-content: space-around;justify-content: space-around;margin: 0.7em;border-radius: 0.5em;}
 header>div:first-child>div:first-child input{width: 70%;height: 7vh;border-radius: 0.5em;}
 header>div:nth-child(2){background-color: ;max-height: 30em;padding: 3em;overflow: hidden;}
 header>div:nth-child(2) a{padding: 0.8em;background-color:#666;border-radius: 0.4em;width: 40vh;display: inline-block;overflow: hidden;text-align: center;border: 2px solid #fff;}
 main{background-color:;}/*
-*/main>section:first-child{background-color: ;display: flex;flex-direction: row;justify-content: space-around;padding: 5em;background-image: url("../img/boule.png");background-repeat: no-repeat;background-size: cover;}
-main>section:first-child p {background-color: #;z-index: -1}
-main>section:first-child>div div{background-color: #666;padding:1em;overflow: hidden;}
+*/main>section:first-child{background-color:rgba(0,0,0,0.5);display: flex;flex-direction: row;justify-content: space-around;padding: 5em;background-image: url("../img/");background-repeat: no-repeat;background-size: cover;}
+main>section:first-child p {background-color:rgba(0,0,0,0.5);z-index: -1}
+main>section:first-child>div div{background-color: #cfd;padding:1em;overflow: hidden;}
 /*
 main>section:nth-child(2){background-color: #pink; display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;padding: ;box-shadow: 1em 1em 1em 0.5em #000;}
 main>section:nth-child(2)>div div{background-color: #666;padding:1em;display: flex;flex-direction: column;align-items: stretch;text-align: center;box-shadow: 1em 1em 1em #000;}
