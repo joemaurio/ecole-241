@@ -1,76 +1,77 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 <head>
 	<meta charset="utf-8">
-	<title>My.Ga</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">  
+	<title>Myga</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="shortcut icon"  href="assets/img/Logo.png">
 </head>
 <body>
-	<header class="bg-Y">
-		<div class="">
-			<img class="" src="assets/img/Logo.png" alt="Cette image est un logo"></a>
-			<div class="block-nav">
-				<form class="justify-self-end" method="post" action="#">
-					<input class="width-15" type="text" name="pseudo" placeholder="Votre identifiant" required>
-					<input class="width-15" type="password" name="pwd" placeholder="************" required>
-					<input class="width-15" type="submit" value="Connection">
-				</form>
-				<p><a href="#">Mot de passe oublié?</a></p>
-				<select>
-					<option value="Français" selected>Français</option>
-					<option>Anglais</option>
-					<option>Espagnol</option>
-				</select>
-			</div>
+	<header class="container">
+		<div>
+			<select>
+				<option>Français</option>
+				<option>Anglais</option>
+				<option>Espagnol</option>
+			</select>
+			<form>
+				<input type="text" name="" placeholder="speudo" required>
+				<input type="password" name="" placeholder="*******" required>
+				<input type="submit" name="" value="Se connecter">
+				<a href="assets/error.html">Mot de passe oublié?</a>
+			</form>
 		</div>
+		<nav>
+			<img src="assets/img/Logo.png">
+			<ul>
+				<li><a href="#menu">My_GA</a></li>
+				<li><a href="#menu">Société</a></li>
+				<li><a href="#menu">Accueil</a></li>
+			</ul>
+		</nav>
 	</header>
-	<main>
-		<section class="marg-y-auto">
-			<div class="block-centre color-green">
-				<p class="color-yellow bg-green">Enregistez votre nom de domaine <span class="txt-spartan-bold color-green bg-w">.ga</span> <span class="color-yellow">GRATUIT</span></p> 
-				<form method="post" action="#">
-					<input class="" placeholder="domaine.ga" type="text" name="nom"  minlength="6" maxlength="12" required>
-					<label class="txt-spartan-bold txt-40 color-green">.ga</label>
-					<input class="" type="submit" value="Go c'est Go">
-				</form>		
+	<main class="container">
+		<hr>
+		<section>
+			<div>
+				<form>
+					<p class="un">Enregistrer gratuitement votre nom de domaine</p>
+					<input class="deux" type="text" name="" placeholder="domaine.ga">
+					
+					<input class="quatre" type="submit" name="" value="Enregistrer">
+				</form>
 			</div>
-		</section>	
+		</section>
+		<hr>
 	</main>
-	<footer class="bg-green">	
-		<div class="footer1 ">
-			<ul>
-				<li class=""><span class="txt-Bai-Jamjuree font-bold">My_GA</span></li>
-				<li><a class="color-yellow" href="#">Accueil</a></li>
-				<li><a class="color-yellow" href="#">WHOIS</a></li>
-			</ul> 
-			<ul>
-				<li class=""><span class="txt-Bai-Jamjuree font-bold">Société</span></li>
-				<li><a class="color-yellow" href="#">A propos de My GA</a></li>
-				<li><a class="color-yellow" href="#">Politiques</a></li>
-				<li><a class="color-yellow" href="#">Bureaux d'Enregistrement</a></li>
-			</ul>
-			<ul>
-				<li class=""><span class="txt-Bai-Jamjuree font-bold">Assistance</span></li>
-				<li><a class="color-yellow" href="#">FAQ</a></li>
-				<li><a class="color-yellow" href="#">Contactez-Nous</a></li>
-				<li><a class="color-yellow" href="#">API</a></li>
-			</ul>
+	<footer>
+		<div class="container" id="menu">
+			<div >
+				<a href="#menu">My_GA</a>
+				<ul >
+					<li><a href="#">Accueil</a></li>
+					<li><a href="#">WHOIS</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#menu">Société</a>
+				<ul>
+					<li><a href="#">A propos de My GA</a></li>
+					<li><a href="#">Politiques</a></li>
+					<li><a href="#">Bureaux d'Enregistrement</a></li>
+				</ul>
+			</div>
+			<div>
+				<a href="#menu">Assistance</a>
+				<ul>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Contactez-Nous</a></li>
+					<li><a href="#">API</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="bg-green">
-			<ul class="">	 	
-				<li><a href="#"><i class=" fab fa-facebook-f"></i></a></li>
-				<li><a href="#"><i class=" fab fa-twitter"></i></a></li>
-				<li><a href="#"><i class=" fab fa-instagram"></i></a></li>
-				<li><a href="#"><i class=" fab fa-google-plus-g"></i></a></li>
-				<li><a href="#"><i class=" fab fa-linkedin-in"></i></a></li>
-				<li><a href="#"><i class="fab fa-youtube-square"></i></a></li>
-			</ul>
-		</div>	
 	</footer>
 </body>
 </html>
