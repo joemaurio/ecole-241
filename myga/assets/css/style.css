@@ -2,7 +2,7 @@ body{margin: 0;padding: 0;font-family: 'Rokkitt', serif;}
 
 li{list-style-type: none;}
 
-a:hover{color:#fff;text-decoration: none;background-color: green;}
+a:hover{color:#fff;text-decoration: none;background-color: #009247;}
 a{text-decoration: none;color:yellow;}
 hr{padding: 0.1em;background-color: #33CC00;margin: 3em;}
 .un{grid-area: un;margin: 0.7em;color:yellow;text-align: center;}
@@ -10,7 +10,7 @@ hr{padding: 0.1em;background-color: #33CC00;margin: 3em;}
 .trois{grid-area: trois;margin: 0.7em;padding: 0;color:green;font-size: 1em;}
 .quatre{grid-area: quatre;margin: 0.7em;}
 
-input[type=submit]{background-color: green;color:#fff;border-color: yellow;}
+input[type=submit]{background-color: #009247;color:#fff;border-color: yellow;}
 input[type=submit]:hover{background-color: yellow;color:green;}
 @font-face{font-family: spartan-bold;src:url("../fonts/spartan-bold.ttf") format('truetype');}
 
@@ -77,7 +77,7 @@ section form{width: 100%; background-color: rgba(0,9,0,0.5);display: grid;grid-t
 
 
 /*footer*/
-footer{background-color: green;}
+footer{background-color: #009247;}
 footer>div{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-around;}
 footer>div>div{padding: 2em;margin: 1em;border-radius: 5%;box-shadow: 0.5em 0.5em 0.5em yellow;}
 footer>div>div:hover{box-shadow: 1em 1em 1em 1em yellow;}
