@@ -8,12 +8,19 @@ main>div:nth-child(2){margin: auto 1em;}
 a{text-decoration: none;color: #fff;font-size: 1em;}
 .classdiv-img{margin: 1em 3em;text-align: center}
 .class3{background-color: #e0201f;height: 3em;}
-.authentif{background-color: #135fcf;margin: 2em 2em;border-radius: 20px;display: flex;flex-direction: column;align-items: center;padding: 1em;}
+.authentif{background-color:;margin: 2em 2em;border-radius: 20px;display: flex;flex-direction: column;align-items: center;padding: 1em;color: #000;}
 .marg-tb-1{margin: 1em auto;}
 .div-haut-bas{background-color:#e0201f;height: 3em;}
 .samba-profil{display: flex;flex-direction: row;justify-content: space-between;padding: 1em;align-items: center;}
 
 .txt-center{text-align: center}
 .alig-self-logo{align-self: center}
-.top-menu-bloc{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: space-between;}
+.top-menu-bloc{display: flex;flex-direction: column;align-items: center}
 .div-top-menu{padding: 1em 1em;background-color: #e0201f;margin: 0.2em}
+
+.btn-primary{
+    border: 1px solid #e0201f;
+    background-color: #e0201f;
+    border-radius: 10px;
+    padding: 10px;
+ }

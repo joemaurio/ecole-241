@@ -10,7 +10,7 @@ h1{text-align: center}
 .txt-center{text-align: center}
 
 
-
+.form-group{text-align: center;margin: 3em 5em;}
 .form-control{
     border-radius: 10px;
  }
@@ -20,5 +20,5 @@ h1{text-align: center}
     border-radius: 10px;
     padding: 10px;
  }
- 
+ .color-black{color: #000;}
 
