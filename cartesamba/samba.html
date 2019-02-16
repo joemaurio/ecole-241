@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>samba mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  
+  /*background: #fff;
+  color: #fff;*/
+  font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a
+{
+  text-decoration: none;
+  color:#fff;
+  
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #fff;text-decoration: underline;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+ top:10px;
+ left:3px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 80px;
+  margin: -100px 0 0 -35px;
+  padding: 50px;
+  padding-top: 125px;
+  text-align: center;
+  background: #e0201f;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+        table{width: 50%;}
+        td{background-color:;box-shadow: 1px 1px 1px #000;}
+        .div-haut-bas{background-color:#e0201f;height: 3em;}
+    
+
+
+
+        .dropbtn {
+          background-color: #e0201f;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          margin: 2em;text-align: center;
+          border-radius: 1em;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #fff;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+          background-color: #e0201f;
+        }
+        </style>
+</head>
+<body>
+    <header class="div-haut-bas">
+            <nav role="navigation">
+                    <div id="menuToggle">
+                      
+                      <input type="checkbox" />
+                      
+                     
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      
+                      
+                      <ul id="menu">
+                        <a href="../samba.html"><li>Accueil</li></a>
+                        <a href="../formMonCompte.html"><li>Recharger</li></a>
+                        <a href="#"><li>Historique</li></a>
+                        <a href="#"><li>Maps</li></a>
+                      </ul>
+                    </div>
+                  </nav>
+        <div>
+
+        </div>
+    </header>
+    <section>
+        <div class="samba-profil">
+            <div>
+                <img src="assets/img/LogoTotal1 copie1.png" class="alig-self-logo" width="100vh">
+            </div>
+            <div>
+                <img src="assets/img/index.jpeg" style="border-radius:100%" width="100vh"><br>
+              <p class="txt-center">Eclat</p>  
+            </div>
+        </div>
+            <p class="txt-center">Nos services</p>
+        <div class="top-menu-bloc">
+            <div class="dropdown">
+                <button class="dropbtn">Recharge</button>
+                <div class="dropdown-content">
+                <a href="formMonCompte.html">Mon Compte</a>
+                <a href="formAutreCompte.html">Un autre Compte</a>
+                
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Historiques</button>
+                <div class="dropdown-content">
+                <a href="historiques/depot.html">Dépôt</a>
+                <a href="historiques/retrait.html">Retrait</a>
+                
+                </div>
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn"><a href="maps.html">La Maps</a></button>
+                <div class="dropdown-content">
+                
+              </div>
+              <div class="dropdown">
+                <button class="dropbtn">Historiques</button>
+                <div class="dropdown-content">
+                
+                <a href="#">Un autre Compte</a>
+                
+                </div>
+              </div>
+            </div>
+        <div>
+
+        </div>
+    </section>
+    <footer  class="div-haut-bas"></footer>
+
+
+   <!--<h1>Samba</h1>
+    <div class="">
+        <a href="#"><h2>Recharger</h2></a>
+        <a href="recharger/mon_compte/formMonCompte.html">Mon compte</a><br/>
+        <a href="recharger/transfert/formAutreCompte.html">Transfert</a>
+    </div>
+    <div class="">
+        <a href="#"><h2>Historique</h2></a>
+        <a href="historiques/depot.html">Dépôt</a><br/>
+        <a href="historiques/retrait.html">Retrait</a>
+    </div>
+    <br/>
+    <DIV><a href="index.html">page deb</a></DIV>--> 
+</body>
+</html>

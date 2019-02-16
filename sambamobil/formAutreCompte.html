@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+
+        <meta charset="utf-8"> 
+
+        <title>Recharger mon compte</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="sweetalert2.min.css">
+
+    </head>
+
+    <body>
+
+        <form id="">
+
+            <legend>formulaire de recharge de mon compte(mobil)</legend>
+
+            <div>
+
+               <p>Choix du numéro</p>
+
+               <input type="radio" name="tel" id="tel"><label for="tel" >Mon numéro</label>
+
+               
+
+            </div>
+
+            <div>
+
+                <input type="radio" name="tel" id="autretel"><label for="autretel" >Autre numéro</label><br>
+
+                <label for="autreNum">Entrer le numéro</label>
+
+                <input type="text" name="autretel" placeholder="Autre numéro" id="autreNum">
+
+            </div>
+
+            <div>
+
+                <input type="text" id="numCarte" placeholder="Numéro de carte"><label for="numCarte">numéro de la Carte</label>
+
+            </div>
+
+            <div>
+
+                <label for="autreMontant">Entrer le montant (min 5000fcfa)</label>
+
+                <input type="text" id="autreMontant" placeholder="Entrer un autre motant/5000fcfa minimum">
+
+            </div>
+
+            <div>
+
+                    <a href="#" onclick="confirm()">Envoyer</a>
+
+                
+
+            </div>
+
+            
+
+        </form>
+
+
+
+
+
+
+
+         <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    <!-- sweetalert2-->
+
+    <script src="sweetalert2.all.min.js"></script>
+
+    <script src="sweetalert2.all.js"></script>
+
+    <script>
+
+        function confirm() {
+
+            Swal.fire({
+
+                input: 'password',
+
+               
+
+                text: "Entrer votre mot de passe pour commfirmer l'envoie",
+
+                type: '',
+
+                showCancelButton: true,
+
+                confirmButtonColor: '#3085d6',
+
+                cancelButtonColor: '#d33',
+
+                confirmButtonText: 'Envoyer',
+
+                timer:15000
+
+            })/*.then((result) => {
+
+                if (result.value) {
+
+                    Swal.fire(
+
+                        'Deleted!',
+
+                        'Your file has been deleted.',
+
+                        'success'
+
+                    )
+
+                }
+
+            })*/
+
+        }
+
+    </script>
+
+    </body>
+
+</html>
