@@ -1,0 +1,24 @@
+.bar-rouge{
+    height: 90px;
+    background-color: #e0201f;
+}
+.bar-rouge2{
+    height: 90px;
+    background-color: #e0201f;
+    margin-top: 10px;
+}
+.recharge{
+    background-color: ;
+    color: #000;
+    border-radius: 20px;
+    padding: 20px;
+  
+}
+
+.recharge input[type="text"]{
+    outline: none;
+    padding: 5px;
+    border-radius: 10px
+}
+
+.marg-tb-1{margin: 1em auto;}

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/sweetalert2-8.0.7/sweetalert2.min.css">
+    <title>Samba mobile</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        
+        body
+        {
+          margin: 0;
+          padding: 0;
+          
+          
+          /*background: #fff;
+          color: #fff;*/
+          font-family: "Avenir Next", "Avenir", sans-serif;
+        }
+        
+        a
+        {
+          text-decoration: none;
+          color:#fff;
+          
+          transition: color 0.3s ease;
+        }
+        
+        a:hover
+        {
+          color: #fff;text-decoration: underline;
+        }
+        
+        #menuToggle
+        {
+          display: block;
+          position: relative;
+         top:10px;
+         left:3px;
+          
+          z-index: 1;
+          
+          -webkit-user-select: none;
+          user-select: none;
+        }
+        
+        #menuToggle input
+        {
+          display: block;
+          width: 40px;
+          height: 32px;
+          position: absolute;
+          top: -7px;
+          left: -5px;
+          
+          cursor: pointer;
+          
+          opacity: 0; /* hide this */
+          z-index: 2; /* and place it over the hamburger */
+          
+          -webkit-touch-callout: none;
+        }
+        
+        /*
+         * Just a quick hamburger
+         */
+        #menuToggle span
+        {
+          display: block;
+          width: 33px;
+          height: 4px;
+          margin-bottom: 5px;
+          position: relative;
+          
+          background: #cdcdcd;
+          border-radius: 3px;
+          
+          z-index: 1;
+          
+          transform-origin: 4px 0px;
+          
+          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                      background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                      opacity 0.55s ease;
+        }
+        
+        #menuToggle span:first-child
+        {
+          transform-origin: 0% 0%;
+        }
+        
+        #menuToggle span:nth-last-child(2)
+        {
+          transform-origin: 0% 100%;
+        }
+        
+        /* 
+         * Transform all the slices of hamburger
+         * into a crossmark.
+         */
+        #menuToggle input:checked ~ span
+        {
+          opacity: 1;
+          transform: rotate(45deg) translate(-2px, -1px);
+          background: #232323;
+        }
+        
+        /*
+         * But let's hide the middle one.
+         */
+        #menuToggle input:checked ~ span:nth-last-child(3)
+        {
+          opacity: 0;
+          transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        
+        /*
+         * Ohyeah and the last one should go the other direction
+         */
+        #menuToggle input:checked ~ span:nth-last-child(2)
+        {
+          transform: rotate(-45deg) translate(0, -1px);
+        }
+        
+        /*
+         * Make this absolute positioned
+         * at the top left of the screen
+         */
+        #menu
+        {
+          position: absolute;
+          width: 80px;
+          margin: -100px 0 0 -10px;
+          padding: 50px;
+          padding-top: 125px;
+          text-align: left;
+          background: #e0201f;
+          list-style-type: none;
+          -webkit-font-smoothing: antialiased;
+          /* to stop flickering of text in safari */
+          
+          transform-origin: 0% 0%;
+          transform: translate(-100%, 0);
+          
+          transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        }
+        
+        #menu li
+        {
+          padding: 10px 0;
+          font-size: 22px;
+        }
+        
+        /*
+         * And let's slide it in from the left
+         */
+        #menuToggle input:checked ~ ul
+        {
+          transform: none;
+        }
+        
+        .btn-confirm{
+            font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+    </style>
+    <title>Samba mobile</title>
+</head>
+<body>
+    <div class="div-haut-bas">
+            <nav role="navigation">
+                    <div id="menuToggle">
+                      
+                      <input type="checkbox" />
+                      
+                     
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      
+                      
+                      <ul id="menu">
+                        <a href="../samba.html"><li>Accueil</li></a>
+                        <a href="../formMonCompte.html"><li>Recharger</li></a>
+                        <a href="#"><li>Historique</li></a>
+                        <a href="#"><li>Maps</li></a>
+                      </ul>
+                    </div>
+                  </nav>
+    </div>
+    <h1>Demander une carte</h1>
+
+    <form action="" class="form2">
+        <div class="marg-tb-1">
+            <label>Fichier d'identification </label>
+            <input type="file" name="fichier">
+        </div>
+        <div class="">
+            <input type="tel" placeholder="votre numéro de téléphone">
+        </div>
+        <div class="marg-tb-1">
+            <input type="email " placeholder="votre email">
+        </div>
+        <div>
+            <input type="password" name="mdp" id="mdp">
+        </div>
+        <div class="marg-tb-1">
+            <input type="password" name="mdp2" id="mdp2">
+        </div>
+        <div class="">
+            <select name="" id="paiement">
+                <option value="">Choisir un Mode de paiement</option>
+                <option value="Airtel money">Airtel money</option>
+                <option value="Flooz">Flooz</option>
+                <option value="Mobi cash">Mobi cash</option>
+                <option value="Carte visa">Carte visa</option>
+            </select>
+        </div>
+        <div class="marg-tb-1">
+            <select name="" id="lieu">
+                <option value="">Choisir un lieu</option>
+                <option value="Airtel money">station d'IAI</option>
+                <option value="Flooz">station de Nkembo</option>
+                <option value="Mobi cash">station de nzeng-ayong</option>
+                <option value="Carte visa">Station aeroprot</option>
+            </select>
+        </div>
+        <div class="btn-primary marg-tb-1">
+            <a href="form_1.html#form_1" class="btn-primary">revenir</a>
+        </div>
+        <!-- Button de validation -->
+        <div class="btn-primary">
+            <a href="form_verify.html#form_verify">valider</a>
+        </div>
+    </form>
+    <div class="div-haut-bas">
+     </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- sweetalert2-->
+    <script src="../assets/sweetalert2-8.0.7/sweetalert2.all.min.js"></script>
+    <script src="../assets/sweetalert2-8.0.7/sweetalert2.all.js"></script>
+    <script>
+        function confirm() {
+            Swal.fire({
+                title: 'Are your sure?',
+                text: "You won't be able to revert this!",
+                type: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.value) {
+                    Swal.fire(
+                        'Deleted!',
+                        'Your file has been deleted.',
+                        'success'
+                    )
+                }
+            })
+        }
+    </script>
+</body>
+</html>
