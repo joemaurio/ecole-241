@@ -1,3 +1,3 @@
 //demander le nom d'utilisateur et l'afficher 
-const nom = prompt("Entrer votre nom:");
-alert(`Bonjour , ${nom}`);
+const nom = window.prompt("Entrer votre nom:");
+console.log(`Bonjour , ${nom}`);
