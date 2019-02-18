@@ -1,2 +1,2 @@
-let affiche = "OkaCode";
-console.log(affiche);
+//afficher "Okacode dans la console"
+console.log("Okacode");
