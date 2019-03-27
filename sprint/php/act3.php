@@ -36,7 +36,7 @@ $table = array("joe","maurio","maureno","Line","du-tchop","Znx","Naly","Lord","F
 			<td><?php echo $table[9]; ?></td>
 		</tr>
 	</table>
-	<?php  echo "<pre>"; var_dump($table);echo "<pre>";
+	<?php  echo "<pre>"; var_dump($table);echo "</pre>";
 	$nbreElement = sizeof($table);
 	echo "<br>j'ai $nbreElement Prénoms dans mon tableau";
 	
