@@ -14,15 +14,15 @@ $table = array("joe","maurio","maureno","Line","du-tchop","Znx","Naly","Lord","F
 <body>
 	<table border="1">
 		<th>Prénom 1</th>
-		<th>Prénom 1</th>
-		<th>Prénom 1</th>
-		<th>Prénom 1</th>
-		<th>Prénom 1</th>
-		<th>Prénom 1</th>
-		<th>Prénom 1</th>
-		<th>Prénom 1</th>
-		<th>Prénom 1</th>
-		<th>Prénom 1</th>
+		<th>Prénom 2</th>
+		<th>Prénom 3</th>
+		<th>Prénom 4</th>
+		<th>Prénom 5</th>
+		<th>Prénom 6</th>
+		<th>Prénom 7</th>
+		<th>Prénom 8</th>
+		<th>Prénom 9</th>
+		<th>Prénom 10</th>
 		<tr>
 			<td><?php echo $table[0]; ?></td>
 			<td><?php echo $table[1]; ?></td>
