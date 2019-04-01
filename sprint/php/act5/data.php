@@ -1,0 +1,59 @@
+<?php  
+$table = array(
+	$joe = array(
+		'nom' =>"Joe",
+		'prenom' =>"Maurio",
+		'age' =>20,
+		'profil' =>"https://joemaurio.github.io/ecole241/profil/" ),
+	$line = array(
+		'nom' =>"Veika",
+		'prenom' =>"Line",
+		'age' =>22,
+		'profil' =>"https://lineveika.github.io/ecole241/profil/" ),
+	$din = array(
+		'nom' =>"Kelby",
+		'prenom' =>"Din",
+		'age' =>23,
+		'profil' =>"https://dinkelby7.github.io/ecole241/profil/" ),
+	$du_tchop = array(
+		'nom' =>"Falana",
+		'prenom' =>"du_tchop",
+		'age' =>24,
+		'profil' =>"https://falanafelicia.github.io/ecole241/profil/index.html" ),
+	$sisso = array(
+		'nom' =>"Sisso",
+		'prenom' =>"Albert",
+		'age' =>25,
+		'profil' =>"https://albert241.github.io/ecole241/profil/" ),
+	$laurion = array(
+		'nom' =>"Dareich",
+		'prenom' =>"laurion",
+		'age' =>26,'profil' =>"https://github.com/" ),
+	$axel = array(
+		'nom' =>"Axel",
+		'prenom' =>"Rick",
+		'age' =>37,
+		'profil' =>"https://mlraleader.github.io/ecole241/profil/index.html" ),
+	$wilson = array(
+		'nom' =>"Boumys",
+		'prenom' =>"wilson",
+		'age' =>28,
+		'profil' =>"https://jboumys.github.io/ecole241/profil/" ),
+	$casta = array(
+		'nom' =>"Grace",
+		'prenom' =>"Lacasta",
+		'age' =>27,
+		'profil' =>"https://lacastafiore.github.io/ecole241/profil/" ),
+	$kevinn = array(
+		'nom' =>"Mbela",
+		'prenom' =>"Kevinn",
+		'age' =>30,
+		'profil' =>"https://mbela-kevinn98.github.io/ecole241/profil/" ),
+	$ismael = array(
+		'nom' =>"NGOUA",
+		'prenom' =>"ismael",
+		'age' =>24,
+		'profil' =>"https://ismael8.github.io/ecole241/profil/" )
+);
+?>
+
