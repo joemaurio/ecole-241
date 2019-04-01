@@ -4,11 +4,11 @@
 <head>
 	<title>Tableau</title>
 	<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Mon tableau bleu">
-<link rel="stylesheet" type="text/css" href="http://bongservices.alwaysdata.net/styles/bootstrap4/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="http://bongservices.alwaysdata.net/styles/main_styles.css">
-<link rel="stylesheet" type="text/css" href="http://bongservices.alwaysdata.net/styles/responsive.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Mon tableau bleu">
+	<link rel="stylesheet" type="text/css" href="http://bongservices.alwaysdata.net/styles/bootstrap4/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="http://bongservices.alwaysdata.net/styles/main_styles.css">
+	<link rel="stylesheet" type="text/css" href="http://bongservices.alwaysdata.net/styles/responsive.css">
 <style >
 		*{box-sizing: border-box;}
 		body{padding: 0;margin: 2em;text-align: center;}
@@ -33,7 +33,7 @@
 			<th>Profil</th>
 		</thead>
 		<tbody>
-			<?php for ($i=0;$i<11;$i++) :?>
+			<?php for ($i=0;$i< count($table);$i++) :?>
 			<tr>
 				 <td><?= $i+1 ?></td>
 				 <td><?= $table[$i]['prenom'] ?></td>
