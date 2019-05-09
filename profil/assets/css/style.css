@@ -1,6 +1,7 @@
 /*Général*/
+html{background-color: red}
 *{box-sizing: border-box;font-family: 'Montserrat';}
-body{margin: 0;padding: 0;/*font-family: 'Montserrat', sans-serif;font-family: 'Raleway', sans-serif;font-family: 'Varela Round', sans-serif;*/}
+body{margin: 0.2em;padding: 0.2	em;/*font-family: 'Montserrat', sans-serif;font-family: 'Raleway', sans-serif;font-family: 'Varela Round', sans-serif;*/}
 li{display: inline-block;margin: 0;}
 a{text-decoration: none;padding: 0.5em;border-radius: 1em;}
 article{padding: 0;margin: 0;background-color:;display: inline-block;}
@@ -70,7 +71,7 @@ u{margin: 0;}
 .img-moi{z-index: -10000;opacity: 0.9;width: 50%;height: auto;}
 
 
-header{background-color:#0b3257;max-height: 600vh; display: flex;flex-direction: column;align-items: stretch;}
+header{background-color:#0b3257;max-height: 600vh; display: flex;flex-direction: column;align-items: stretch;position: relative;}
 header>div:first-child{display: flex;flex-direction: row;flex-wrap: wrap;justify-content: flex-end;padding: ;margin:auto 3em;}
 
 .menu1{color:#fff; display: flex;flex-direction: row;flex-wrap: wrap;align-content: space-around;justify-content: space-around;margin-top: 0.7em;margin-right: 5em; border-radius: 0.5em;}
@@ -524,8 +525,8 @@ img.hover-shadow {
 
 
 /*loading*/
-div#load_screen{background-color: #0b3257;opacity: 1;position: fixed;z-index: 10;top: 0px;width: 100%;height: 1600px;}
-div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin: 300px auto;}
+div#load_screen{background-color: #0b3257;opacity: 1;position: fixed;z-index: 10;top: 0px;width: 100%;height: 1600px;text-align: center;}
+div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin: 300px auto;text-align: center;}
 /*En savoir plus sur moi*/
 .overlay3 {
   height: 100%;
@@ -714,4 +715,6 @@ div.form-contact2 ul{display: flex;flex-direction:row;display: none;}
 section.contact>form {display:flex;flex-direction:column-reverse;margin: 0;padding: 0;padding-left: -510em}
 section.contact>div.ko>form.form-contact>div.form-contact1 input.disnone{display: none;}
 footer{text-align: center;}
+#load_screen{text-align: center;}
+
 }
