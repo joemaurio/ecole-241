@@ -17,6 +17,7 @@ header>div:nth-child(2)>div>a:hover{text-decoration: none;color:#fff;border: 1px
 main>section:nth-child(2)>div>div a:hover{text-decoration: none;color:#fff;font-family: 'Montserrat', sans-serif;text-align: left;}
 
 p{color:#fff;}
+.lien{color:#14ba9c!important;font-weight: bold;}
 .txt-center{text-align: center;}
 .text-1{font-size: 1px}
 .text-2{font-size: 2px}
@@ -27,6 +28,10 @@ p{color:#fff;}
 .text-7{font-size: 7px}
 .text-8{font-size: 8px}
 .text-9{font-size: 9px}
+.text-10{font-size: 10px}
+.text-11{font-size: 11px}
+.text-12{font-size: 12px}
+.text-13{font-size: 13px}
 .text-15{font-size: 15px}
 .mar-1{margin: 1em;}
 .mar-2{margin: 2em;}
@@ -43,7 +48,7 @@ u{margin: 0;}
 #motaf div a{color:#fff;}
 
 .description{transition: width 2s, height 2s, transform 2s;}
-.description-txt{display: flex;flex-direction: column;justify-content: flex-start;}
+.description-txt{display: flex;flex-direction: column;justify-content: flex-start;margin: 0;padding: 1em;}
 .slider{width: 100%;overflow: hidden;padding: 0;height: 80vh;}
 .slides{width: calc(500px *4);animation: defil 5s infinite;display: flex;flex-direction: row;}
 
@@ -86,7 +91,7 @@ header>div:nth-child(2)>div>a:nth-child(2){padding: 0.5em;background-color:;bord
 main{background-color:;}
 main>section:first-child{background-color:; ;display: flex;flex-direction: row	;justify-content: space-between;flex-wrap:; ;margin: 3.5em 5em 3.5em 1em;padding: ;position: relative;}
 main>section:first-child article{display: flex;flex-direction: row;align-items:;background-color: ;justify-content: space-between;}
-main>section:first-child article>div{background-color: ;padding: 0;align-self: center;}
+main>section:first-child article>div{background-color: ;padding: 0em;align-self: cente;}
 main>section:first-child article>div>div p{font-family: 'Montserrat';word-spacing: 0.6em;line-height: 1.7em;background-color: ;text-align: justify;}
 main>section:first-child article>div>div ul{align-self: flex-start;background-color: ;margin-top: -1.2em;padding: 0;}
 main>section:first-child article>div>div li:first-child{padding:0;background-color:;margin-left: -0.7em;}
@@ -633,7 +638,7 @@ div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin: 300px 
 }
 
 /*button en savoir plus sur moi*/
-.buttonb {
+.buttonb,.buttonc {
   border-radius: 4px;
   background-color: #11b59c;
   border: none;
@@ -646,7 +651,7 @@ div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin: 300px 
   cursor: pointer;
   margin: 3em;
 }
-
+.buttonc span{color: #fff!important;}
 .buttonb span {
   cursor: pointer;
   display: inline-block;
@@ -671,4 +676,42 @@ div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin: 300px 
 .buttonb:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+@media screen and (max-width:600px){
+	.menu1{text-align: center;}
+/*menu du haut*/.Nav{display: flex;flex-direction: row;justify-content: space-around;padding: em;margin: 0.9em;font-size: 13px}
+.Nav li a {width: 9vh}
+
+/*phrase d'acroche1*/.lumiere{display: ;margin: 0;padding: 0;font-size:10px;text-align: center;}
+.btnheader{display:flex;flex-direction: column-reverse;align-items: center;}
+.btnheader a{margin: 0.5em}
+.description{padding:0;margin: px}
+.description-txt{padding: 0px;margin: 0;font-size: 13px}
+.description-txt p{justify-content: center;}
+
+main>section:first-child{display: flex;flex-direction: column;justify-content: space-around;margin: ;padding:;}
+main>section:first-child aside{width: 45vh;padding: em;margin: 1em;}
+main>section:first-child article{display: flex;flex-direction: column;padding: em;margin: 1em}
+section#temoi span{display: none}
+.trop img{width: 45vh!important;height: 70vh;z-index: 10}
+main>section:first-child article>div>div p{margin: 1px;padding: 1em;font-size: 3vw}
+#montaf .row {display: flex;flex-direction: column;}
+#montaf .row .column {width: 100%}
+#niveo{display: flex;flex-direction: column;}
+.skills{display: flex;flex-direction: column;}
+.compétences1{text-align: left;padding-top: 1em;margin: 0;}
+.compétences1 span{font-size:10px }
+.compétences{margin: 0;padding: 0;	 }
+.buttonb{display: none;}
+.noveo2 div.row{display: flex;flex-direction: row;flex-wrap: wrap;font-size:3vw }
+.noveo2 span{font-size: 15px} 
+.column2{width: 50%}
+.years {display: none;}
+#temoi span{margin-left: 15%;}
+textarea{width:300px}
+div.form-contact2 ul{display: flex;flex-direction:row;display: none;}
+section.contact>form {display:flex;flex-direction:column-reverse;margin: 0;padding: 0;padding-left: -510em}
+section.contact>div.ko>form.form-contact>div.form-contact1 input.disnone{display: none;}
+footer{text-align: center;}
 }

@@ -4,7 +4,8 @@
 	<title>Mon portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" media="screen and (min-width:1200px)" href="assets/css/mediaphone.css">
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet"> 
@@ -21,7 +22,7 @@
 		<div class="menu1">
 			<div>
 				<nav>
-					<ul>
+					<ul class="Nav">
 						<li><a href="#moi" class="mar-r1-2">Moi</a></li>
 						<li><a href="#montaf" class="mar-r1-2">Mon travail</a></li>
 						<li><a href="#contact">Me joindre</a></li>
@@ -32,17 +33,14 @@
 		<div class="lumiere mar-t">
 			<p class="oka"><span class="color-G">&lt;head&gt;</span>OKA<span class="color-G">&lt;/head&gt;</span></p>
 			<p class="txt-2">Je suis Joe Maurio<br>Developpeur Web</p>
-			<div class="mar-t1-2">
+			<div class="mar-t1-2 btnheader">
 				<a href="moi.html">Ecrivez moi</a>
 				<a href="CV-Joe_Maurio_MOUNDOUNGA.pdf"><i class="fa fa-download"></i>Télécharger mon CV</a>
 			</div>
 		</div>
 		<hr class="hr1">
 		<hr class="hr2">
-	</header>	
-	<main>
-		<section class="" id="moi">
-			<div class="icon-bar">
+		<div class="icon-bar">
  				 <a class="active" href="#"><i class="fa fa-home"></i></a> 
  				 <a href="#moi" title="Moi"><i class="fas fa-user-secret"></i></a> 
  				 <a href="#montaf" title="Mes réalisations"><i class="fas fa-cubes"></i></a>
@@ -51,7 +49,11 @@
  				 <a href="#temoi" title="Témoignages"><i class="fas fa-users"></i></a> 
  				 <a href="#" title="Mes centres d'intérets"><i class="far fa-heart"></i></a> 
  				 <a href="#contact" title="Me contacter"><i class="fas fa-envelope-open-text"></i></a> 
-			</div>
+		</div>
+	</header>	
+	<main>
+		<section class="photo" id="moi">
+		
 			<article>
 				<div class="description">
 					<div class="description-txt">
@@ -69,7 +71,7 @@
 				</div>	
 			</article>
 			<aside class="">
-				<div>
+				<div class="trop">
 					<img src="assets/img/IMG_2432.jpg" alt="..." >
 				</div>
 			</aside>
@@ -272,7 +274,7 @@
 		<section  class="compétences" id="niveo1">
 			<span class="mar-2">Qui je suis</span>
 			<div id="niveo">
-				<div class="mar-2">
+				<div class="mar-2 skills">
 					<span class="text-15">Mes Skills</span>
 					<div class="compétences1">
 						<span class=" text-15"> PHP-30%</span>
@@ -361,9 +363,10 @@
 					    <a href="assets/img/html.png" target="_blank"><img src="assets/img/html.png" onclick="openModal();currentSlide(4)" class="hover-shadow" width="100">
 					    </a><br>HTML
 					  </div>
+
 					</div>
 
-				<div class="mar-3">
+				<div class="mar-3 years">
 					<span class="">Mes 5 dernieres années</span>
 					<div class="tab mar-1">
 					  <button class="tablinks" onclick="openCity(event, '2015')">2015</button>
@@ -388,12 +391,12 @@
 					  <span>Entrée à l'Ecole 241</span>
 					</div>
 				</div>
-					
+					<button class="buttonc"><span  onclick="openNav1()">En savoir plus sur Moi</span></button>
 				 </div>
 				 <div>
 				 	
 				 </div>
-				</div>	
+			</div>	
 		 </div>
 		</section>
 		<section>
@@ -427,32 +430,32 @@
 			<span>Témoignages</span>
 			<div class="slideshow-container">
 				<div class="mySlides">
-				  <img src="assets/img/riri.jpeg" style="border-radius: 50%" width="200" height="200"><br>
-				  <span class="author">Riri</span><br>
-				  <q>C'est le seul</q>
+				  <img src="assets/img/wilson.jpg" style="border-radius: 50%" width="200" height="200"><br>
+				  <a href="https://jboumys.github.io/ecole241/profil/" class="lien">BOUMYS Jean-Wilson</a><br>
+				  <q class="text-12">Joe est une personne très motiver dans tous ce qu'il fait.J'ai été ravi de travailler avec lui dans mes activités</q>
 				</div>
 				<div class="mySlides">
-				  <img src="assets/img/riri.jpeg" style="border-radius: 50%" width="200" height="200"><br>
-				  <span class="author">Riri</span><br>
-				  <q>C'est le seul qui me</q>
+				  <img src="assets/img/darel.jpg" style="border-radius: 50%" width="200" height="200"><br>
+				  <a href="#" class="lien">Darel</a><br>
+				  <q class="text-12"></q>
 				</div>
 				<div class="mySlides">
-				  <img src="assets/img/riri.jpeg" style="border-radius: 50%" width="200" height="200"><br>
-				  <span class="author">Riri</span><br>
-				  <q>C'est le seul vrai</q>
+				  <img src="assets/img/wilson.jpg" style="border-radius: 50%" width="200" height="200"><br>
+				  <a href="#" class="lien"></a><br>
+				  <q class="text-12"></q>
 				</div>
+				
 				<a class="prev" onclick="plusSlides(-1)">❮</a>
 				<a class="next" onclick="plusSlides(1)">❯</a>
 			</div>
 		</section>
 		<section class="contact" id="contact">
 			<span>Laissez moi un mot...</span>
-			<div class="">
+			<div class="ko">
 				<form class="form-contact mar-4" action="#">
 					<div class="form-contact1">
 						<input type="text" name="" placeholder="Votre pseudo ou votre nom" class="mar-1" required>
 						<input type="mailto" name="" placeholder="votre adresse mail" class="mar-1" required>
-						<input type="submit" name="" value="envoyer" class="mar-1 ">
 					</div>
 					<div class="form-contact2">
 						<textarea class="child un" name="message" id="message" rows="9" placeholder="Laissez moi un mot..." required></textarea>
@@ -463,6 +466,7 @@
 							<li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
 							<li><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></li>
 						</ul>
+						<input type="submit" name="" value="envoyer" class="mar-1 ">
 					</div>
 					
 					
