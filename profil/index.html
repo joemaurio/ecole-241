@@ -11,10 +11,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:500|Montserrat:700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Special+Elite|Barlow+Condensed|Pontano+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 </head>
-<body>
+<body onload="myFonction()" style="margin:;"  style="display:none;" id="myDiv" >
+	<div id="load_screen"><div id="loading">OkaCode...</div></div>
 	<header>
 		<div class="menu1">
 			<div>
@@ -31,19 +33,25 @@
 			<p class="oka"><span class="color-G">&lt;head&gt;</span>OKA<span class="color-G">&lt;/head&gt;</span></p>
 			<p class="txt-2">Je suis Joe Maurio<br>Developpeur Web</p>
 			<div class="mar-t1-2">
-				<a href="moi.html">Découvrez moi</a>
-				<a href="contact.html">Ecrivez moi</a>
+				<a href="moi.html">Ecrivez moi</a>
+				<a href="CV-Joe_Maurio_MOUNDOUNGA.pdf"><i class="fa fa-download"></i>Télécharger mon CV</a>
 			</div>
 		</div>
 		<hr class="hr1">
 		<hr class="hr2">
-		
-	</header>
-	
+	</header>	
 	<main>
-
 		<section class="" id="moi">
-
+			<div class="icon-bar">
+ 				 <a class="active" href="#"><i class="fa fa-home"></i></a> 
+ 				 <a href="#moi" title="Moi"><i class="fas fa-user-secret"></i></a> 
+ 				 <a href="#montaf" title="Mes réalisations"><i class="fas fa-cubes"></i></a>
+ 				 <a href="#compt" title="Mes compétences"><i class="fas fa-brain"></i></a> 
+ 				 <a href="#niveo1" title="Mes méthodes"><i class="fas fa-book"></i></a> 
+ 				 <a href="#temoi" title="Témoignages"><i class="fas fa-users"></i></a> 
+ 				 <a href="#" title="Mes centres d'intérets"><i class="far fa-heart"></i></a> 
+ 				 <a href="#contact" title="Me contacter"><i class="fas fa-envelope-open-text"></i></a> 
+			</div>
 			<article>
 				<div class="description">
 					<div class="description-txt">
@@ -57,8 +65,7 @@
 							<li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
 							<li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
 						</ul>
-					</div>
-					
+					</div>	
 				</div>	
 			</article>
 			<aside class="">
@@ -67,8 +74,120 @@
 				</div>
 			</aside>
 		</section>
-		<section id="montaf">
-			<div>
+		<section id="montaf" class="">
+			<div class="compétences2">
+				<span>Mes réalisations</span>
+			</div>
+			<div class="">
+				<div id="myBtnContainer">
+				  <button class="btn" onclick="filterSelection('24hchrono')"> 24H Chrono</button>
+				  <button class="btn" onclick="filterSelection('ecole241')">Ecole 241</button>
+				  <button class="btn" onclick="filterSelection('perso')"> Perso</button>
+				</div>
+			<div class="row">
+			  	<div class="column 24hchrono">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/bong.png" alt="Mountains" style="width:100%">
+			       			<a href="http://bongservices.alwaysdata.net/" class="" target="_blank">
+			       				<div class="overlay2">
+									Bong-Services
+								</div>
+							</a>
+			    	 </div>
+			  	</div>
+			  	<div class="column 24hchrono">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/job.png" alt="Mountains" style="width:100%">
+			       			<a href="http://jobconnectgabon241.alwaysdata.net/index.php" class="" target="_blank">
+			       				<div class="overlay2">
+									Jobconnect
+								</div>
+							</a>
+			    	 </div>
+			  	</div>
+			  	<div class="column 24hchrono">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/ari.png" alt="Mountains" style="width:100%">
+			       			<a href="assets/projets/final/admin.html" class="" target="_blank">
+			       				<div class="overlay2">
+									Agri-Collect
+								</div>
+							</a>
+			    	 </div>
+			  	</div>
+			  	<div class="column 24hchrono">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/total.png" alt="Mountains" style="width:100%">
+			       			<a href="../cartesamba (copie)/index.html" class="" target="_blank">
+			       				<div class="overlay2">
+									Carte Samba
+								</div>
+							</a>
+			    	 </div>
+			  	</div>
+			  	<div class="column ecole241">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/cret.png" alt="Mountains" style="width:100%">
+			       			<a href="../defi/index.html" class="" target="_blank">
+			       				<div class="overlay2">
+									Hotel le Crêt
+								</div>
+							</a>
+			    	 </div>
+			  	</div>
+			  	<div class="column ecole241">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/my.png" alt="Mountains" style="width:100%">
+			       			<a href="../myga/index.html" class="" target="_blank">
+			       				<div class="overlay2">
+									My GA
+								</div>
+							</a>
+			    	 </div>
+			  	</div>
+			  	<div class="column ecole241">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/mag.png" alt="Mountains" style="width:100%">
+			       			<a href="../magazine/index.html" class="" target="_blank">
+			       				<div class="overlay2">
+								Deshimag
+								</div>
+							</a>
+			    	 </div>
+			  	</div>
+			  	<div class="column ecole241">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/maq.png" alt="Mountains" style="width:100%">
+			       			<a href="http://jawahiryasmine.alwaysdata.net/assets/css/wireframe2.png" class="" target="_blank">
+			       				<div class="overlay2">
+									Wireframe
+								</div>
+							</a>
+			    	 </div>
+			  	</div>
+			  	<div class="column perso">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/jaw.png" alt="Mountains" style="width:100%">
+			       			<a href="http://jawahiryasmine.alwaysdata.net/" class="" target="_blank">
+			       				<div class="overlay2">
+									Jawahir Yasmine
+								</div>
+							</a>
+			    	 </div>
+			  	</div>
+			  	<div class="column perso">
+			   		 <div class="content cont-img">
+			      		<img src="assets/img/hse.png" alt="Mountains" style="width:100%">
+			       			<a href="../hse/index.html" class="" target="_blank">
+			       				<div class="overlay2">
+								HSE
+								</div>
+							</a>
+			    	 </div>
+			  	</div>  	
+			</div>
+			</div>
+			<!--<div>
 				<div class="cont-img" title="24h-chrono">
 					<img src="assets/img/ecole.jpg" alt="Avatar" class="image">
 					<a href="24h-chrono.html" class=""><div class="overlay2">
@@ -105,63 +224,227 @@
 					<a href="okacode.html"><div class="overlay2">
 						lettre
 					</div></a>
-				</div>
-				
+				</div>		
 			</div>
 			<div>
 				<a href="#" class="voirplus">Voir plus</a>
-			</div>
-					
-			
-			
+			</div>-->
 		</section>
-		<section class="compétences">
+	<!--<section class="compétences" id="compt">
 			<span>Mes compétences</span>
 			<div class="compétences1">
-				<div class="compthtml">
-					HTML
+					PHP-30%
+				<div class="a100">
+					<div class="comptphp">
+					</div>
 				</div>
-				<div class="comptcss">
-					CSS
+					Linux-35%
+				<div class="a100">
+					<div class="comptlinux">
+					</div>
 				</div>
-				<div class="comptjs">
-					JavaScript
+					JavaScript-40%
+				<div class="a100">
+					<div class="comptjs">
+					</div>
 				</div>
-				<div class="comptphp">
-					PHP
+					Bootstrap-45%
+				<div class="a100">
+					<div class="comptboots">
+					</div>
 				</div>
-				<div class="comptlinux">
-					Linux
+					Wordpress-55%
+				<div class="a100">
+					<div class="comptwp">		
+					</div>
 				</div>
-				<div class="comptboots">
-					Bootstrap
+					CSS-70%
+				<div class="a100">
+					<div class="comptcss">
+					</div>
 				</div>
-				<div class="comptwp">
-						Wordpress
+					HTML-90%
+				<div class="a100">
+					<div class="compthtml">
+					</div>
 				</div>
+		</section>-->
+		<section  class="compétences" id="niveo1">
+			<span class="mar-2">Qui je suis</span>
+			<div id="niveo">
+				<div class="mar-2">
+					<span class="text-15">Mes Skills</span>
+					<div class="compétences1">
+						<span class=" text-15"> PHP-30%</span>
+						<div class="a100">
+							<div class="comptphp">
+							</div>
+						</div>
+						<span class=" text-15">Linux-37%</span>							
+						<div class="a100">
+							<div class="comptlinux">
+							</div>
+						</div>
+						<span class=" text-15">Wordpress-45%</span>							
+						<div class="a100">
+							<div class="comptboots">
+							</div>
+						</div>
+						<span class=" text-15">Html/Css/Javacript/Bootstrap-61%</span>							
+						<div class="a100">
+							<div class="compthtml">
+							</div>
+						</div>
+					</div>
+					<div id="myNav" class="overlay3">
+ 					<a href="javascript:void(0)" class="closebtn2" onclick="closeNav1()">&times;</a>
+ 	 					<div class="overlay3-content">
+							<div class="row1">
+  								<div class="rightcolumn">
+    								<div class="card">
+								      <h2>Oka</h2>
+								      <h5>Je suis Joe Maurio MOUNDOUNGA</h5>
+								      <div class="fakeimg">Je suis apprenant à l’école 241 dans la cohorte des développeurs web depuis le 02 novembre 2018.Depuis lors j’apprends à apporter des solutions numériques à divers problèmes de nature quelconque. Toutefois j’ai une vie simple comme tout le monde. Je suis l’aîné d’une famille de 4 enfants, célibataire, pas encore papa mais déjà tonton.</div><br>
+								      <div class="fakeimg"></div><br>
+								      <div class="fakeimg"></div>
+    								</div>
+								    <div class="card">
+								      <h3></h3>
+								      <p></p>
+								    </div>
+  								</div>
+							</div>
+  						</div>
+					</div>
+					<button class="buttonb"><span  onclick="openNav1()">En savoir plus sur Moi</span></button>
+				<!--<div>
+					<div class="tab">
+					  <button class="tablinks" onclick="openCity(event, '2015')">2015</button>
+					  <button class="tablinks" onclick="openCity(event, '2016')">2016</button>
+					  <button class="tablinks" onclick="openCity(event, '2017')">2017</button>
+					  <button class="tablinks" onclick="openCity(event, '2018')">2018</button>
+					</div>
+					<div id="2015" class="tabcontent">
+					  <span>Obtention de mon baccalauréat série D avec mession assez bien.</span>
+					</div>
+					<div id="2016" class="tabcontent">
+					  <span>Obtention de mon DTS en Réseaux & Télécoms</span>
+					</div>
+					<div id="2017" class="tabcontent">
+					  <span>Tokyo is the capital of Japan.</span>
+					</div>
+					<div id="2018" class="tabcontent">
+					  <span>Tokyo is the capital of Japan.</span>
+					</div>
+				</div>-->				
+				</div>
+			<div class="noveo2 mar-2">
+				<span class="mar-t-b-5">Mes Certifications</span>
+					<div class="row mar-2">
 
-				<hr>
-				<div class="X">100%</div>
+					  <div class="column2">
+						  <a href="assets/img/certif2.jpg"  target="_blank">
+						  	<img src="assets/img/certif2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width="100">
+						  </a> <br>CSS
+					  </div>
+					  <div class="column2">
+					    <a href="assets/img/certif3.jpg" target="_blank"> 
+					    	<img src="assets/img/certif3.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"  width="100">
+					    </a><br>JavaScript
+					  </div>
+					  <div class="column2">
+					    <a href="assets/img/certif4.jpg" target="_blank" >
+					    	<img src="assets/img/certif4.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" width="100">
+					    </a><br>PHP
+					  </div>
+					  <div class="column2">
+					    <a href="assets/img/html.png" target="_blank"><img src="assets/img/html.png" onclick="openModal();currentSlide(4)" class="hover-shadow" width="100">
+					    </a><br>HTML
+					  </div>
+					</div>
+
+				<div class="mar-3">
+					<span class="">Mes 5 dernieres années</span>
+					<div class="tab mar-1">
+					  <button class="tablinks" onclick="openCity(event, '2015')">2015</button>
+					  <button class="tablinks" onclick="openCity(event, '2016')">2016</button>
+					  <button class="tablinks" onclick="openCity(event, '2017')">2017</button>
+					  <button class="tablinks" onclick="openCity(event, '2018')">2018</button>
+					  <button class="tablinks" onclick="openCity(event, '2019')">2019</button>
+					</div>
+					<div id="2015" class="tabcontent">
+					  <span>Obtention de mon Bachaloréat série D</span>
+					</div>
+					<div id="2016" class="tabcontent">
+					  <span>Obtention du concours d'entrée à L'INPTIC</span>
+					</div>
+					<div id="2017" class="tabcontent">
+					  <span>Stage d'apprentissage à Gabon TV</span>
+					</div>
+					<div id="2018" class="tabcontent">
+					  <span>Obtention du DTS en Réseaux-Télécoms</span>
+					</div>
+					<div id="2019" class="tabcontent">
+					  <span>Entrée à l'Ecole 241</span>
+					</div>
+				</div>
+					
+				 </div>
+				 <div>
+				 	
+				 </div>
+				</div>	
+		 </div>
+		</section>
+		<section>
+			
+		</section>
+	<!--	<section class="section section-lg bg-gray-100 text-left section-relative">
+			<div class="container">
+			  <div class="row row-60 justify-content-center justify-content-xxl-between">
+				<div class="col-lg-6 col-xxl-5 position-static">
+				 
+				  <div class="tabs-custom" id="tabs-5">
+					
+					<div class="list-history-wrap">
+					  <ul class="nav list-history">
+						<li class="list-history-item" role="presentation">
+							<div class="list-history-circle">ccfffffff</div>2015<br>Obtention<br> de mon<br> Bachaloreat <br>sérieD</li>
+						<li class="list-history-item" role="presentation">
+							<div class="list-history-circle"></div>2017<br>Satagiaire<br> à <br>Gabon TV</li>
+						<li class="list-history-item" role="presentation">
+							<div class="list-history-circle"></div>2018<br>Obtention<br> du DTS en<br> Réseaux-Télécoms</li>
+						
+					  </ul>
+					</div>
+				  </div>
+				</div>
+				
+			  </div>
+			</div>
+		  </section>-->
+		<section  class="compétences" id="temoi">
+			<span>Témoignages</span>
+			<div class="slideshow-container">
+				<div class="mySlides">
+				  <img src="assets/img/riri.jpeg" style="border-radius: 50%" width="200" height="200"><br>
+				  <span class="author">Riri</span><br>
+				  <q>C'est le seul</q>
+				</div>
+				<div class="mySlides">
+				  <img src="assets/img/riri.jpeg" style="border-radius: 50%" width="200" height="200"><br>
+				  <span class="author">Riri</span><br>
+				  <q>C'est le seul qui me</q>
+				</div>
+				<div class="mySlides">
+				  <img src="assets/img/riri.jpeg" style="border-radius: 50%" width="200" height="200"><br>
+				  <span class="author">Riri</span><br>
+				  <q>C'est le seul vrai</q>
+				</div>
+				<a class="prev" onclick="plusSlides(-1)">❮</a>
+				<a class="next" onclick="plusSlides(1)">❯</a>
 			</div>
 		</section>
-		<!--<section>
-			<div class="div-moi">
-				<div class="div-moi1">
-					<div class="">
-						<p class="description-txt">OKA...<br>
-							Me voici,dans une petite biographie je vais brievement vous parler de moi,mon CV est à votre disposition pour les informations sur mes competances.Dans album je vous reseves un espace de plusieurs photos de moi en plein code.Mais Jmaurio c'est pas que le code,d'où la partie Extras.Je vous invite à la déouvrir...</p>
-					</div>
-					
-				</div>
-				<div class="div-moi3">
-						<a href="bio.html" class="btn btn-primary moi-a" title="Ma biographie">Biographie</a>
-						<a href="assets/error.html" class="btn btn-primary moi-a" title="Mon CV">CV</a>
-						<a href="assets/error.html" class="btn btn-primary moi-a" title="Mes photos">Album</a>
-						<a href="assets/error.html" class="btn btn-primary moi-a" title="Plus qu'un Dev">Extras</a>
-				</div>
-			
-			</div>
-		</section>-->
 		<section class="contact" id="contact">
 			<span>Laissez moi un mot...</span>
 			<div class="">
@@ -219,6 +502,7 @@
 
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="assets/js/mainjs.js"></script>
 
 </body>
 </html>
