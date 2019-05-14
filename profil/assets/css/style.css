@@ -1,12 +1,12 @@
 /*Général*/
-html{}
+
 *{box-sizing: border-box;font-family: 'Montserrat';}
-body{ margin: 0.1em;padding: 0.1em;/*font-family: 'Montserrat', sans-serif;font-family: 'Raleway', sans-serif;font-family: 'Varela Round', sans-serif;*/}
+body{ margin: 0;padding: 0;/*font-family: 'Montserrat', sans-serif;font-family: 'Raleway', sans-serif;font-family: 'Varela Round', sans-serif;*/}
 li{display: inline-block;margin: 0;}
 a{text-decoration: none;padding: 0.5em;border-radius: 1em;}
 article{padding: 0;margin: 0;background-color:;display: inline-block;}
 ul{display: inline-block;margin: 0;}
-img{opacity: 0.9;}
+img{opacity: ;}
 i{color:#737373;}
 i:hover{color:#14ba9c}
 a{display: inline-block;}
@@ -575,7 +575,7 @@ div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin:300px a
   font-size: 60px;
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 800px) {
   .overlay3 a {font-size: 20px}
   .overlay3 .closebtn2 {
   font-size: 40px;
@@ -638,7 +638,7 @@ div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin:300px a
  two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
-    width: 100%;
+    width: ;
     padding: 0;
   }
 }
@@ -728,6 +728,7 @@ footer{text-align: center;}
 .moi2 div p{color: #212529;text-align: justify;padding: 2em}
 .mail{color:#212529!important;text-decoration: none;}
 .mail:hover{color: #212529!important}
+body{overflow-x: hidden;}
 .icon-bar {  width: 0px; background-color: #28bea4!important;position: fixed;top:9em;  left: 10px;}
 main>section:first-child{background-color:; ;display: none;flex-direction: column;	;justify-content: space-between;flex-wrap:; ;margin: ;padding:0 ;position: relative;}
 main>section:first-child article{display: flex;flex-direction: row;align-items:;background-color: ;justify-content: space-between;margin: 0em;}
