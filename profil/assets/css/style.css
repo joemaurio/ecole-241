@@ -717,6 +717,7 @@ footer{text-align: center;}
 .mail{color:#212529!important;text-decoration: none;}
 .mail:hover{color: #212529!important}
 body{overflow-x: hidden;}
+main{overflow: hidden;}
 .icon-bar {  width: 0px; background-color: #28bea4!important;position: fixed;top:9em;  left: 10px;}
 main>section:first-child{background-color:; ;display: none;flex-direction: column;	;justify-content: space-between;flex-wrap:; ;margin: ;padding:0 ;position: relative;}
 main>section:first-child article{display: flex;flex-direction: row;align-items:;background-color: ;justify-content: space-between;margin: 0em;}
