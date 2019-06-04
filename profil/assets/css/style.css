@@ -678,6 +678,7 @@ div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin:300px a
 	.menu2{m}
 /*menu du haut*/.Nav{display: flex;flex-direction: row;justify-content: space-around;padding: em;margin: 0.9em;font-size: 13px}
 .Nav li a {width: 9vh}
+div.menu1{display: none!important;}
 
 /*phrase d'acroche1*/.lumiere{display: ;margin: 0;padding: 0;font-size:10px;text-align: center;}
 .btnheader{display:flex;flex-direction: column-reverse;align-items: center;}

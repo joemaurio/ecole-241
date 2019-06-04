@@ -1,4 +1,4 @@
-//loading page
+//Page de chargement
 window.addEventListener("load", function(){
   var load_screen = document.getElementById("load_screen");
   document.body.removeChild(load_screen);  
@@ -10,12 +10,12 @@ function filterSelection(c) {
   x = document.getElementsByClassName("column");
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    jmRemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) jmAddClass(x[i], "show");
   }
 }
 
-function w3AddClass(element, name) {
+function jmAddClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
@@ -24,7 +24,7 @@ function w3AddClass(element, name) {
   }
 }
 
-function w3RemoveClass(element, name) {
+function jmRemoveClass(element, name) {
   var i, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
