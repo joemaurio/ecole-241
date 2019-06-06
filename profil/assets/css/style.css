@@ -506,8 +506,8 @@ img.hover-shadow {
 
 
 /*loading*/
-div#load_screen{background-color: #0b3257;opacity: 1;position: fixed;z-index: 10;top: 0px;width: 100%;height: 1600px;text-align: center;}
-div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin:300px auto;}
+div#load_screen{background-color: #0b3257;opacity: 1;position: fixed;z-index: 10;top: 150px;width: 100%;height: 1600px;text-align: center;}
+div#load_screen>div#loading{color: #fff;width: ;height: 24px;margin:300px auto;}
 .load1{background-image: url(../img/logooka.png);background-repeat: no-repeat;background-size: cover;;margin: 5em}
 .load2{position: absolute;top: calc(50% - 150px);left:calc(50% - 100px);transform: perspective(1000px);width: 200px;height:300px;transform-style: preserve-3d;background-image: url(../img/logooka.png);background-repeat: no-repeat;background-size: cover;}
 .load2 div{position:absolute;top: 0;left: 0;width: 100%;height: 100%;transform-style: preserve-3d}
@@ -516,6 +516,27 @@ div#load_screen>div#loading{color: #fff;width: 120px;height: 24px;margin:300px a
 .load2 div span:nth-child(2){transform: rotateX(45deg);}
 .load2 div span:nth-child(3){transform: rotateX(-45deg);}
 .load2 div span:nth-child(4){transform: rotateX(90deg);}
+
+.loader {
+  border: 10px solid #ffe600;
+  border-radius: 50%;
+  border-top: 10px solid #00ae33;
+  border-right: 10px solid #ffe600;
+  border-bottom: 10px solid #0056d0;
+  
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 /*En savoir plus sur moi*/
 .overlay3 {
   height: 100%;
