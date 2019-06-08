@@ -523,7 +523,7 @@ div#load_screen>div#loading{color: #fff;width: ;height: 24px;margin:300px auto;}
   border-top: 10px solid #00ae33;
   border-right: 10px solid #ffe600;
   border-bottom: 10px solid #0056d0;
-  
+  padding: 525px;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
