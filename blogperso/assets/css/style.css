@@ -46,10 +46,10 @@ main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2){display: flex;flex
 main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3){display: flex;flex-direction: row;margin-top: 1.5em;}
 main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(2){display: flex;flex-direction: column;justify-content: space-between;margin-left: 1em;}
 main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3)>div:nth-child(2){display: flex;flex-direction: column;justify-content: space-between;margin-left: 1em;}
-main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3)>div:nth-child(2) span{display: flex;flex-direction: column;justify-content: space-between;margin-left: 1em;font-size: 11px!important;}
-main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(2) span{display: flex;flex-direction: column;justify-content: space-between;margin-left: 1em;font-size: 11px!important;}
-main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(2) time{display: flex;flex-direction: column;justify-content: space-between;margin-left: 1em;font-size: 10px!important;}
-main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3)>div:nth-child(2) time{display: flex;flex-direction: column;justify-content: space-between;margin-left: 1em;font-size: 10px!important;}
+main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3)>div:nth-child(2) span{margin-left: 1em;font-size: 11px!important;}
+main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(2) span{margin-left: 1em;font-size: 11px!important;}
+main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(2) time{margin-left: 1em;font-size: 10px!important;margin-bottom:3px;}
+main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3)>div:nth-child(2) time{margin-left: 1em;font-size: 10px!important;margin-bottom:3px;}
 main>section:nth-child(2)>aside:nth-child(3) p{line-height:30px;padding: -2px;}
 
 				/*****	style footer	*****/
@@ -63,11 +63,27 @@ footer>div>div:nth-child(2){display: flex;flex-direction: row;justify-content: s
 				/*****	mediasqueries	ecran inferieur a 900px*****/
 
 @media screen and (max-width:900px){
-	main{display: flex;flex-direction: column;}
-	footer>div>div:nth-child(2){display: flex;flex-direction: row;justify-content: space-between; margin-bottom: 2%;flex-wrap: wrap;}
+	/****    general   ****/
+	img{width: 100%}
+
+	/********/
+	header{position: relative;}
+	/*header>div:nth-child(1){position:fixed; background-color: #000;}*/
+	header>div:nth-child(1)>nav>ul{display: flex;flex-direction: row;flex-wrap: wrap;}
+	header>div:nth-child(1)>nav>ul li{}
 	h1{text-align: center;}
 	header>div:nth-child(2) h1{position: absolute; top: 6px;left: 2px;font-size: 20px!important;letter-spacing: 13px;font-family: 'futura'!important;}
-	img{height: 60%;width: 100%}
-	header{position: relative;}
-	header>div:nth-child(1){position:fixed; background-color: #000;}
+	main{display: flex;flex-direction: column;margin:1% 5%;justify-content: space-between;}
+	main>section:nth-child(1)>article:nth-child(3)>div:nth-child(3)>div a{margin-left: 0.3em;border:1px solid #2f2e2e;}
+	main>section:nth-child(2){margin-top: 5em;}
+	main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2){display: flex;flex-direction: column;}
+	main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3){display: flex;flex-direction: column;}
+	main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(2) span{margin-left:-15px;font-size: 15px!important;}
+	main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(2) time{margin-left:-15px;font-size: 9px!important;}
+	main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3)>div:nth-child(2) span{margin-left:-15px;font-size: 15px!important;}
+	main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3)>div:nth-child(2) time{margin-left:-15px;font-size: 9px!important;}
+	main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(1) img{height: 100%}
+	main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3)>div:nth-child(1) img{height: 100%}
+	footer>div>div:nth-child(2){display: flex;flex-direction: row;justify-content: space-around; margin-bottom: 2%;flex-wrap: wrap;}
+	footer>div>div:nth-child(2) img{width: 15%;height: 80%}	
 }
