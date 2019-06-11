@@ -4,7 +4,7 @@ body{ margin: 0;padding: 0;font-size: 15px;color: #767575;}
 li{display: inline;}
 time{display: block;}
 p{line-height: 1.5em;}
-button{border:1px solid #2f2e2e;padding: 0.1em 0.8em;color: #352e2e;font-size: 14px;text-align: center;}
+button{border:1px solid #2f2e2e;padding: 0.1em 0.8em;color: #352e2e;font-size: 14px;text-align: center;background-color: #fff;}
 a{text-align: center;padding: 0.5em;text-decoration:none;color: #797b83;font-size: 15px;font-family: 'futura', sans-serif;}
 h2{text-transform: uppercase!important;color: #000;font-weight: normal;}
 @font-face{font-family: 'futura';src:url("../font/futura/futura light bt.ttf");}
@@ -25,10 +25,10 @@ h2{text-transform: uppercase!important;color: #000;font-weight: normal;}
 header{display: flex;flex-direction: column;align-items: center;}
 header>div:nth-child(2){position: relative;}
 header>div:nth-child(2)>img{width: 100%;}
-header>div:nth-child(2)>h1>span{font-weight: 500;}
-header>div:nth-child(2) h1{position: absolute; top: -5px;left: 500px;font-size: 40px!important;letter-spacing: 15px;font-family: 'futura'!important;color: #2f2e2e;font-weight: lighter;}
-nav ul li a{margin-left: 2em;font-size: 12px;color: #d2d5e3}
-nav ul li:first-child a{font-size: 12px;color: #797b83}
+header>div:nth-child(2)>h1>span{font-weight: 600;}
+header>div:nth-child(2) h1{position: absolute; top: -5px;left: 500px;font-size: px!important;letter-spacing: 15px;font-family: 'futura'!important;color: #2f2e2e;font-weight: 100;}
+nav ul li a{margin-left: 2em;font-size: 12px;color: #cccccc}
+nav ul li:first-child a{font-size: 12px;color: #000}
 
 				/*****	style main	*****/
 
@@ -58,7 +58,7 @@ main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(2) s
 main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(2)>div:nth-child(2) time{font-size: 11px!important;margin-bottom:3px;}
 main>section:nth-child(2)>aside:nth-child(2)>div:nth-child(3)>div:nth-child(2) time{font-size: 11px!important;margin-bottom:3px;}
 main>section:nth-child(2)>aside:nth-child(3)>span:first-child{font-size: 20px;color: #000;}
-main>section:nth-child(2)>aside:nth-child(3) p{line-height:30px;padding: -2px;}
+main>section:nth-child(2)>aside:nth-child(3) p{line-height:30px;}
 main>section:nth-child(2)>aside:nth-child(3) time{color:#000;font-size: 14px;}
 
 				/*****	style footer	*****/
