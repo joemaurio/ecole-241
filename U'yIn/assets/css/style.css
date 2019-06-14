@@ -1,0 +1,25 @@
+/*****							style général							*****/
+*{box-sizing: border-box;}
+body{ margin: 0;padding: 0;background-color: #14192d;}
+img{width: 100%;}
+h1{color: #fe2851;}
+a{text-decoration: none;color: #fff;}
+span{color: #393a3f;}
+
+
+/**** background-color***/
+.bg-red{background-color:red;}
+.bg-black{background-color:black;}
+.bg-pink{background-color:pink;}
+.bg-yellow{background-color:yellow;}
+.bg-green{background-color:green;}
+.bg-blue{background-color:blue;}
+/****padind*****/
+.pad-1{padding: 1em;}
+.pad-2{padding: 2em;}
+.pad-3{padding: 3em;}
+.pad-4{padding: 4em;}
+.pad-5{padding: 5em;}
+.pad-6{padding: 6em;}
+.pad-7{padding: 7em;}
+.sidebar{border-right: 1px solid #fff;}
