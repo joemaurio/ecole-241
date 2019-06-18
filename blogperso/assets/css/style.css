@@ -2,7 +2,7 @@
 *{box-sizing: border-box;font-family: 'futura', sans-serif!important;}
 body{ margin: 0;padding: 0;font-size: 15px;color: #767575;}
 li{display: inline;}
-time{display: block;}
+time{display: block;color: #000;}
 p{line-height: 1.5em;}
 button{border:1px solid #2f2e2e;padding: 0.1em 0.8em;color: #352e2e;font-size: 14px;text-align: center;background-color: #fff;}
 a{text-align: center;padding: 0.5em;text-decoration:none;color: #797b83;font-size: 15px;font-family: 'futura', sans-serif;}
@@ -23,7 +23,7 @@ h2{text-transform: uppercase!important;color: #000;font-weight: normal;}
 .color-wth{color:#fff;}
 				/*****	style header	*****/
 
-header{display: flex;flex-direction: column;align-items: center;}
+
 header>div:nth-child(2){position: relative;}
 header>div:nth-child(2)>img{width: 100%;}
 header>div:nth-child(2)>h1>span{font-weight: 600;}
@@ -33,9 +33,7 @@ nav ul li:first-child a{font-size: 12px;color: #000}
 
 				/*****	style main	*****/
 
-main{display: flex;flex-direction: row;margin:2% 14%;}
-main>section:nth-child(1){ flex :  80% ; }
-main>section:nth-child(1)>article time{color: #000;}
+main{margin:2% 14%;}
 main>section:nth-child(1) article>div:first-child{margin-bottom: 0.7em;}
 main>section:nth-child(1)>article:nth-child(2){margin:5em auto;}
 main>section:nth-child(1)>article:nth-child(3)>div:nth-child(3){display: flex;flex-direction: row;justify-content: center; margin-top:2em;}
