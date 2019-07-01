@@ -19,15 +19,20 @@
 		<!--début header-->
 		<header>
 			<div class="row justify-content-center">
-				<nav>
-					<ul>
-						<li><a href="index.html">ACCUEIL</a></li>
-						<li><a href="#">MES ASTUCES</a></li>
-						<li><a href="apropos.html">A PROPOS</a></li>
-						<li><a href="contact.html">ME CONTACTER</a></li>
-						<li><a href="#">CONNEXION-INSCRIPTION</a></li>
-					</ul>
-				</nav>
+					<nav class="navbar navbar-expand-sm navbar-dark">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon bg-button"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">	
+				<ul class="navbar-nav">
+					<li><a href="index.html" class="a" title="page d'accueil">ACCUEIL</a></li>
+					<li><a href="#" title="page astuces">MES ASTUCES</a></li>
+					<li><a href="apropos.html" title="page a propos">A PROPOS</a></li>
+					<li><a href="contact.html" title="page contact">ME CONTACTER</a></li>
+					<li><a href="#" title="page connexion">CONNEXION-INSCRIPTION</a></li>
+				</ul>
+			</div>
+		</nav>
 			</div>
 			<div class="justify-content-center row">
 				<h1>MON <span>DERNIER CODE</span></h1>
@@ -76,7 +81,7 @@
 				</section>
 					<!--fin article-->
 					<!--début sidebare-->
-				<section class="col-sm-8 col-md-12 col-lg-3">
+				<section class="col-sm-8 col-md-12 col-lg-4">
 					<aside class="mt-5">
 						<div class="text-center mar-2">
 							<span class="rounded-circle border-1 pad-5"> MDC</span>
@@ -85,12 +90,12 @@
 							<p class="text-center">Bienvenue sur <span class="color-blk">MDC</span> !</p>
 							<p class="text-justify">Je partage sur ce blog mes coups de coeur et découvertes mode, beauté, lifestyle ainsi que mes carnets de voyages</p>
 							<span class="text-center display-block">ME SUIVRE</span>
-							<div class="mt-2">
+							<div class="mt-2 text-center">
 								<ul>
-									<li><img src="assets/img/fbk.png" alt="icon facebook" class="img-10"></li>
-									<li><img src="assets/img/twit.png" alt="icon twiter" class="img-10"></li>
-									<li><img src="assets/img/insta.png" alt="icon instagram" class="img-10"></li>
-									<li><img src="assets/img/cot.png" alt="icon helocon" class="img-10"></li>
+									<li><a href="https://www.facebook.com/" title="lien vers facebook"><img src="assets/img/fbk.png" alt="icon facebook" class="img-10"></a></li>
+									<li><a href="https://twitter.com/" title="lien vers twitter"><img src="assets/img/twit.png" alt="icon twiter" class="img-10"></a></li>
+									<li><a href="https://www.facebook.com/" title="lien vers linkdin"><img src="assets/img/lkd.png" alt="icon instagram" class="img-10"></a></li>
+									<li><a href="https://www.facebook.com/" title="lien vers linkdin"><img src="assets/img/cot.png" alt="icon helocon" class="img-10"></a></li>
 								</ul>
 							</div>
 							
@@ -98,22 +103,28 @@
 					</aside>
 					<aside class="border-3">
 						<span class="color-blk text-20 display-block">DERNIERS ARTICLES</span>
-						<div>
-							<div>
-								<img src="assets/img/2.png" alt="photo article" height="50">
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="row">
+									<div class=" col-lg-4">
+										<img src="assets/img/2.png" alt="photo article" class="img-fluid">
+									</div>
+									<div class=" col-lg-6">
+										<span><a href="#">un mariage civil à paris</a></span>
+										<time datetime="2018-07-28">Juillet 28, 2018</time> 
+									</div>
+								</div>
 							</div>
-							<div>
-								<span><a href="#">un mariage civil à paris</a></span>
-								<time datetime="2018-07-28">Juillet 28, 2018</time> 
-							</div>
-						</div>
-						<div>
-							<div>
-								<img src="assets/img/4.png" alt="photo article" height="50">
-							</div>
-							<div>
-								<span><a href="#">se mettre à la méditation</a></span>
-								<time datetime="2017-10-22">Octobre 22, 2017</time> 
+							<div class="col-lg-12">
+								<div class="row">
+									<div class=" col-lg-4">
+										<img src="assets/img/4.png" alt="photo article" class="img-fluid">
+									</div>
+									<div class=" col-lg-6">
+										<span><a href="#">se mettre à la méditation</a></span>
+										<time datetime="2017-10-22">Octobre 22, 2017</time> 
+									</div>
+								</div>
 							</div>
 						</div>
 					</aside>
@@ -129,15 +140,27 @@
 				</section>
 			</div>
 			<div class="mt-5">
-				<div class="row justify-content-center">
+				<div class="row justify-content-center hidden" id="txt">
 					<p>S'inscrire à la newsletter</p>
 				</div>
-				<div class="row justify-content-center">
-					<form class="form-inline" action="#">
-						<input type="email" class="border-1 text-center pad-A mb-2 mr-sm-2" placeholder="Votre adresse mail">
+				<div class="row justify-content-center hidden">
+					<form class="form-inline" action="#" name="form" method="post" id="newsletter">
+						<input type="email" class="border-1 text-center pad-A mb-2 mr-sm-2" placeholder="Votre adresse mail" name="mail" id="mail">
 						<button type="submit" class="btn mb-2 bg-button pad-A">S'inscrire</button>
 					</form>
 				</div>
+				<div class="loading  text-center row justify-content-center display-none" id="loading">
+					<div class="loader">
+						
+					</div>
+				</div>
+				<div class="row justify-content-center display-none">
+					<p>"Merci d’avoir souscrit à notre newsletter"</p>
+				</div>
+				<div class="row justify-content-center">
+					<p id="alert"></p>
+				</div>
+
 			</div>
 				<!--fin sidebare-->
 		</main>
@@ -147,11 +170,18 @@
 				<div>
 					<p><span>MON </span><span class="color-wth">DERNIER CODE</span><br>
 					&copy; 2019 MON <span class="color-wth">DERNIER CODE</span><br>
-					<span>Fièrement créé avec <a href="https://joemaurio.github.io/ecole241/profil/" target="_blank">jmaurio</a></span></p>
+					<span>Fièrement créé par <a href="https://joemaurio.github.io/ecole241/profil/" target="_blank" title="lien vers jmaurio">jmaurio</a></span></p>
 				</div>
 			</div>
 		</footer>
 		<!--fin footer-->
 	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+
 </body>
 </html>
