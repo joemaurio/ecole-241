@@ -16,11 +16,14 @@ email.addEventListener("submit", function letters(e){
    document.getElementById("loading").classList.remove("display-none");
 } else {
    document.getElementById("alert").innerHTML ="Formulaire mal renseigné";
+   document.getElementById("alert").bgColor = "red";
+
 }
 setTimeout(function(){//pre-loader et message se fin
 	if (emailVerify.test(mail.value)) {
 	document.getElementById("loading").classList.add("display-none");
 	document.getElementById("alert").innerHTML ="Merci d’avoir souscrit à notre newsletter";
+	document.getElementById("alert").bgColor = "red";
 }
 }, 3000);
 });
@@ -32,6 +35,7 @@ contact.addEventListener("submit", function(e){
 	e.preventDefault();
 	if (!mailContact.value || !nom.value || !prenom.value) {//verification des champs obligatoires (si il sont rempli)
 	document.getElementById("alertform").innerHTML ="Formulaire incomplet (remplire les champs obligatoires)";
+	document.getElementById("alertform").bgColor = "red";
 
 	}else{
 		var champs=true;
@@ -40,9 +44,13 @@ contact.addEventListener("submit", function(e){
 		var tettre=true;
 	}else{
 		document.getElementById("alertnom").innerHTML ='Ecrire le nom en lettres capitales ou juste la premiere lettre';
+		document.getElementById("alertnom").bgColor = "red";
+
 	}
 	if (!emailVerify.test(mailContact.value)) {//verification du mail
    	document.getElementById("alertmail").innerHTML ='e-mail mal renseigné';
+   	document.getElementById("alertmail").bgColor = "red";
+
 	}else{
 		//
 		var regex=true;
