@@ -7,7 +7,7 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
-
+*{color:#fff!important;}
 .good{background-color: #0984e3!important;}
 .bold{font-weight: bold;}
 /* Reset */
